@@ -1,8 +1,9 @@
 <script>
   import { range } from "d3-array";
-  import { each } from "svelte/internal";
+  import { scaleLinear } from "d3-scale";
 
   import GridItem from "./GridItem.svelte";
+  import drawings from "../data/drawings.json";
 
   const years = range(1880, 1891);
   const padding = 30;
@@ -17,6 +18,24 @@
   const itemHeight = 300;
   $: itemWidth = svgWidth / numColumns;
   $: svgHeight = numRows * itemHeight;
+
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  const yearScale = scaleLinear()
+    .domain([0, months.length])
+    .range([0, 2 * Math.PI]);
 </script>
 
 <svelte:window bind:innerWidth={windowWidth} />
@@ -31,7 +50,16 @@
           ) * itemHeight})"
         >
           <rect x="0" y="0" width={itemWidth} height={itemHeight} />
-          <GridItem {year} {itemWidth} {itemHeight} />
+          <GridItem
+            {year}
+            {itemWidth}
+            {itemHeight}
+            {months}
+            {yearScale}
+            drawings={drawings.filter(
+              (drawing) => drawing.year === year.toString()
+            )}
+          />
         </g>
       {/each}
     </svg>
