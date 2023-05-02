@@ -1,5 +1,5 @@
 <script>
-  import { range } from "d3-array";
+  import { range, max } from "d3-array";
   import { scaleLinear } from "d3-scale";
 
   import GridItem from "./GridItem.svelte";
@@ -33,9 +33,29 @@
     "November",
     "December",
   ];
-  const yearScale = scaleLinear()
+  const monthScale = scaleLinear()
     .domain([0, months.length])
     .range([0, 2 * Math.PI]);
+
+  const yearlyDrawings = [];
+  years.forEach((year) => {
+    const relatedDrawings = { year: year, months: [] };
+    months.forEach((month) => {
+      relatedDrawings.months.push({
+        month: month,
+        drawings: drawings.filter(
+          (drawing) =>
+            drawing.year === year.toString() && drawing.month === month
+        ),
+      });
+    });
+    yearlyDrawings.push(relatedDrawings);
+  });
+  console.log("yearlyDrawings", yearlyDrawings);
+
+  const maxDrawings = max(yearlyDrawings, (d) =>
+    max(d.months, (i) => i.drawings.length)
+  );
 </script>
 
 <svelte:window bind:innerWidth={windowWidth} />
@@ -55,10 +75,9 @@
             {itemWidth}
             {itemHeight}
             {months}
-            {yearScale}
-            drawings={drawings.filter(
-              (drawing) => drawing.year === year.toString()
-            )}
+            {monthScale}
+            {maxDrawings}
+            drawings={yearlyDrawings.find((d) => d.year === year).months}
           />
         </g>
       {/each}

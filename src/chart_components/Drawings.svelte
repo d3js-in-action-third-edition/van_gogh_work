@@ -1,5 +1,21 @@
 <script>
-  export let year;
+  import { lineRadial, curveCatmullRomClosed } from "d3-shape";
+
   export let drawings;
-  console.log("drawings", year, drawings);
+  export let monthScale;
+  export let radialScale;
+
+  const lineGenerator = lineRadial()
+    .angle((d, i) => monthScale(i))
+    .radius((d) => radialScale(d.drawings.length))
+    .curve(curveCatmullRomClosed);
 </script>
+
+<path d={lineGenerator(drawings)} />
+
+<style lang="scss">
+  path {
+    fill: rgba($purple, 0.4);
+    stroke: $purple;
+  }
+</style>
