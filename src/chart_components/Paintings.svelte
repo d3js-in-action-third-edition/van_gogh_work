@@ -1,28 +1,16 @@
 <script>
   import { forceSimulation, forceX, forceY, forceCollide } from "d3-force";
+  import { scaleRadial } from "d3-scale";
 
   export let paintings;
   export let monthScale;
   export let radius;
+  export let maxPaintingArea;
 
-  const nodeRadius = 3;
-
-  // $: {
-  //   forceSimulation()
-  //     .force(
-  //       "x",
-  //       forceX((d) => radius * Math.sin(monthScale(d.monthIndex))).strength(0.5)
-  //     )
-  //     .force(
-  //       "y",
-  //       forceY(
-  //         (d) => -1 * radius * Math.cos(monthScale(d.monthIndex))
-  //       ).strength(0.5)
-  //     )
-  //     .force("collide", forceCollide().radius(nodeRadius + 1))
-  //     .nodes(paintings);
-  //   // .on("tick", updateNetwork);
-  // }
+  const circleRadiusScale = scaleRadial()
+    .domain([0, Math.sqrt(maxPaintingArea)])
+    .range([0, 8]);
+  const defaultRadius = 3;
 
   let simulation = forceSimulation(paintings);
   let nodes = [];
@@ -49,7 +37,11 @@
       .force(
         "collide",
         forceCollide()
-          .radius(nodeRadius + 1)
+          .radius((d) =>
+            d.width_cm === null
+              ? defaultRadius + 1
+              : circleRadiusScale(Math.sqrt(d.width_cm * d.height_cm)) + 1
+          )
           .strength(1)
       )
       .alpha(1); // [0, 1] The rate at which the simulation finishes. You should increase this if you want a faster simulation, or decrease it if you want more "movement" in the simulation.
@@ -59,8 +51,17 @@
 </script>
 
 {#each nodes as node}
-  <circle cx={node.x} cy={node.y} r={nodeRadius} />
+  <circle
+    cx={node.x}
+    cy={node.y}
+    r={node.width_cm === null
+      ? defaultRadius
+      : circleRadiusScale(Math.sqrt(node.width_cm * node.height_cm))}
+    fill="grey"
+    stroke={node.medium === "oil"
+      ? "none"
+      : node.medium === "watercolor"
+      ? "black"
+      : "cyan"}
+  />
 {/each}
-<!-- {#each paintings as painting}
-  <circle cx={painting.x} cy={painting.y} r={nodeRadius} />
-{/each} -->

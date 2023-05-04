@@ -12,6 +12,7 @@
   export let drawings;
   export let maxDrawings;
   export let paintings;
+  export let maxPaintingArea;
 
   const padding = 15;
   $: radius = (itemHeight - 4 * padding) / 2;
@@ -44,7 +45,7 @@
         text-anchor="middle"
         dominant-baseline="middle">{month.slice(0, 3)}</text
       >
-      <Paintings {paintings} {monthScale} {radius} />
+      <Paintings {paintings} {monthScale} {radius} {maxPaintingArea} />
     {/each}
   </g>
   <text y={itemHeight - 10} text-anchor="middle">{year}</text>

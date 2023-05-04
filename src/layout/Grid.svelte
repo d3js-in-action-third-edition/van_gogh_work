@@ -58,22 +58,8 @@
   );
 
   console.log("paintings", paintings);
-  // const paints = [];
-  // paintings.forEach((p) => {
-  //   const year = p.Date.slice(-4);
-  //   const month = p.Date.slice(0, -4);
-  //   if (+year >= 1880) {
-  //     paints.push({
-  //       title: p.Title,
-  //       created_in: p["Created in"],
-  //       year: year,
-  //       month: month,
-  //       current_location: p["Current location"],
-  //       medium: p.medium,
-  //     });
-  //   }
-  // });
-  // console.log("paintings with year-month", paints);
+  const maxPaintingArea = max(paintings, (d) => d.width_cm * d.height_cm);
+  console.log("maxPaintingArea", maxPaintingArea);
 </script>
 
 <svelte:window bind:innerWidth={windowWidth} />
@@ -97,6 +83,7 @@
             {maxDrawings}
             drawings={yearlyDrawings.find((d) => d.year === year).months}
             paintings={paintings.filter((p) => +p.year === year)}
+            {maxPaintingArea}
           />
         </g>
       {/each}
