@@ -20,4 +20,7 @@
       >The Letters of Vincent van Gogh</a
     >
   </li>
+  <li>
+    <a href="https://www.wikiart.org">Wikiart</a>
+  </li>
 </ul>

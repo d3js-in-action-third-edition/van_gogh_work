@@ -1,6 +1,6 @@
 <script>
-  import { range } from "d3-array";
   import Drawings from "../chart_components/Drawings.svelte";
+  import Paintings from "../chart_components/Paintings.svelte";
   import { radiansToDegrees } from "../utils/helpers";
   import { scaleLinear } from "d3-scale";
 
@@ -11,17 +11,20 @@
   export let monthScale;
   export let drawings;
   export let maxDrawings;
-  console.log(year, drawings);
+  export let paintings;
 
   const padding = 15;
   $: radius = (itemHeight - 4 * padding) / 2;
 
-  $: radialScale = scaleLinear().domain([0, maxDrawings]).range([0, radius]);
+  $: radialScale = scaleLinear()
+    .domain([0, maxDrawings])
+    .range([0, 2 * radius]);
 </script>
 
 <g transform="translate({itemWidth / 2}, 0)">
   <g transform="translate(0, {padding + radius})">
     <circle cx="0" cy="0" r={radius} fill="none" stroke="black" />
+    <Drawings {drawings} {monthScale} {radialScale} />
     {#each months as month, i}
       <line
         class="line-{month}-{i}"
@@ -41,8 +44,8 @@
         text-anchor="middle"
         dominant-baseline="middle">{month.slice(0, 3)}</text
       >
+      <Paintings {paintings} {monthScale} {radius} />
     {/each}
-    <Drawings {drawings} {monthScale} {radialScale} />
   </g>
   <text y={itemHeight - 10} text-anchor="middle">{year}</text>
 </g>
