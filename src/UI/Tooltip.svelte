@@ -49,7 +49,7 @@
     height: 300px;
   }
   .metadata {
-    max-width: 400px;
+    max-width: 600px;
     padding: 10px 30px 10px 15px;
   }
   .title {

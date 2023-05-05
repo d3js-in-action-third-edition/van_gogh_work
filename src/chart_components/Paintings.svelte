@@ -57,8 +57,6 @@
     .range(subjects.map((d) => d.color));
 
   const handleMouseEnter = (e, node) => {
-    console.log(e);
-    console.log(node);
     isTooltipVisible = true;
     tooltipMeta = {
       x: e.offsetX,
@@ -75,7 +73,6 @@
   };
   const handleMouseLeave = () => {
     isTooltipVisible = false;
-    tooltipMeta.url = "";
   };
 </script>
 
