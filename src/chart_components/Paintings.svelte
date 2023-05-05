@@ -1,6 +1,7 @@
 <script>
   import { forceSimulation, forceX, forceY, forceCollide } from "d3-force";
-  import { scaleRadial } from "d3-scale";
+  import { scaleRadial, scaleOrdinal } from "d3-scale";
+  import { subjects } from "../utils/subjects";
 
   export let paintings;
   export let monthScale;
@@ -48,6 +49,10 @@
     // .alphaDecay(0.0005); // [0, 1] The rate at which the simulation alpha approaches 0. you should decrease this if your bubbles are not completing their transitions between simulation states.
     // .restart();
   }
+
+  const colorScale = scaleOrdinal()
+    .domain(subjects.map((d) => d.subject))
+    .range(subjects.map((d) => d.color));
 </script>
 
 {#each nodes as node}
@@ -57,7 +62,7 @@
     r={node.width_cm === null
       ? defaultRadius
       : circleRadiusScale(Math.sqrt(node.width_cm * node.height_cm))}
-    fill="grey"
+    fill={node.subject !== "" ? colorScale(node.subject) : "grey"}
     stroke={node.medium === "oil"
       ? "none"
       : node.medium === "watercolor"

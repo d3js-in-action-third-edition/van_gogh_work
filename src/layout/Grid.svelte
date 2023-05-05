@@ -4,7 +4,7 @@
 
   import GridItem from "./GridItem.svelte";
   import drawings from "../data/drawings.json";
-  import paintings from "../data/paintings.json";
+  import paintings from "../data/paintings_subject-link.json";
 
   const years = range(1880, 1891);
   const padding = 30;
@@ -59,7 +59,27 @@
 
   console.log("paintings", paintings);
   const maxPaintingArea = max(paintings, (d) => d.width_cm * d.height_cm);
-  console.log("maxPaintingArea", maxPaintingArea);
+
+  paintings.forEach((p) => {
+    switch (true) {
+      case p.title.toLocaleLowerCase().includes("self-portrait"):
+        p["subject"] = "self-portrait";
+        break;
+      case p.title.toLocaleLowerCase().includes("portrait"):
+      case p.title.toLocaleLowerCase().includes("man"):
+      case p.title.toLocaleLowerCase().includes("woman"):
+      case p.title.toLocaleLowerCase().includes("head"):
+        p["subject"] = "portrait";
+        break;
+      case p.title.toLocaleLowerCase().includes("still life"):
+        p["subject"] = "still life";
+        break;
+      default:
+        p["subject"] = "";
+        break;
+    }
+  });
+  console.log(paintings);
 </script>
 
 <svelte:window bind:innerWidth={windowWidth} />
