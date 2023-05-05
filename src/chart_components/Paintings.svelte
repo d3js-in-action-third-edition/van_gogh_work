@@ -7,6 +7,8 @@
   export let monthScale;
   export let radius;
   export let maxPaintingArea;
+  export let isTooltipVisible = false;
+  export let tooltipMeta = {};
 
   const circleRadiusScale = scaleRadial()
     .domain([0, Math.sqrt(maxPaintingArea)])
@@ -53,6 +55,28 @@
   const colorScale = scaleOrdinal()
     .domain(subjects.map((d) => d.subject))
     .range(subjects.map((d) => d.color));
+
+  const handleMouseEnter = (e, node) => {
+    console.log(e);
+    console.log(node);
+    isTooltipVisible = true;
+    tooltipMeta = {
+      x: e.offsetX,
+      y: e.offsetY,
+      url: node.image,
+      title: node.title,
+      createdIn: node.created_in,
+      date: node.month !== "" ? `${node.month} ${node.year}` : node.year,
+      medium: node.medium,
+      currentLocation: node.current_location,
+      dimensions:
+        node.width_cm !== null ? `${node.width_cm} x ${node.height_cm} cm` : "",
+    };
+  };
+  const handleMouseLeave = () => {
+    isTooltipVisible = false;
+    tooltipMeta.url = "";
+  };
 </script>
 
 {#each nodes as node}
@@ -62,11 +86,20 @@
     r={node.width_cm === null
       ? defaultRadius
       : circleRadiusScale(Math.sqrt(node.width_cm * node.height_cm))}
-    fill={node.subject !== "" ? colorScale(node.subject) : "grey"}
+    fill={node.subject !== "" ? colorScale(node.subject) : "white"}
     stroke={node.medium === "oil"
       ? "none"
       : node.medium === "watercolor"
       ? "black"
       : "cyan"}
+    on:mouseover={(e) => handleMouseEnter(e, node)}
+    on:focus={(e) => handleMouseEnter(e, node)}
+    on:mouseleave={() => handleMouseLeave()}
   />
 {/each}
+
+<style>
+  circle {
+    cursor: pointer;
+  }
+</style>

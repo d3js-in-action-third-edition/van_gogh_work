@@ -57,29 +57,21 @@
     max(d.months, (i) => i.drawings.length)
   );
 
-  console.log("paintings", paintings);
   const maxPaintingArea = max(paintings, (d) => d.width_cm * d.height_cm);
 
-  paintings.forEach((p) => {
-    switch (true) {
-      case p.title.toLocaleLowerCase().includes("self-portrait"):
-        p["subject"] = "self-portrait";
-        break;
-      case p.title.toLocaleLowerCase().includes("portrait"):
-      case p.title.toLocaleLowerCase().includes("man"):
-      case p.title.toLocaleLowerCase().includes("woman"):
-      case p.title.toLocaleLowerCase().includes("head"):
-        p["subject"] = "portrait";
-        break;
-      case p.title.toLocaleLowerCase().includes("still life"):
-        p["subject"] = "still life";
-        break;
-      default:
-        p["subject"] = "";
-        break;
-    }
-  });
-  console.log(paintings);
+  import Tooltip from "../UI/Tooltip.svelte";
+  $: isTooltipVisible = false;
+  $: tooltipMeta = {
+    x: 0,
+    y: 0,
+    url: "",
+    title: "",
+    createdIn: "",
+    date: "",
+    medium: "",
+    currentLocation: "",
+    dimensions: "",
+  };
 </script>
 
 <svelte:window bind:innerWidth={windowWidth} />
@@ -104,14 +96,32 @@
             drawings={yearlyDrawings.find((d) => d.year === year).months}
             paintings={paintings.filter((p) => +p.year === year)}
             {maxPaintingArea}
+            bind:isTooltipVisible
+            bind:tooltipMeta
           />
         </g>
       {/each}
     </svg>
   {/if}
+  {#if isTooltipVisible}
+    <Tooltip
+      x={tooltipMeta.x}
+      y={tooltipMeta.y}
+      url={tooltipMeta.url}
+      title={tooltipMeta.title}
+      createdIn={tooltipMeta.createdIn}
+      date={tooltipMeta.date}
+      medium={tooltipMeta.medium}
+      currentLocation={tooltipMeta.currentLocation}
+      dimensions={tooltipMeta.dimensions}
+    />
+  {/if}
 </div>
 
 <style>
+  .viz-container {
+    position: relative;
+  }
   svg {
     border: 1px solid magenta;
   }
