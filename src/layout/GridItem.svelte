@@ -1,6 +1,7 @@
 <script>
   import Drawings from "../chart_components/Drawings.svelte";
   import Paintings from "../chart_components/Paintings.svelte";
+  import Letters from "../chart_components/Letters.svelte";
   import { radiansToDegrees } from "../utils/helpers";
   import { scaleLinear } from "d3-scale";
 
@@ -28,6 +29,7 @@
   <g transform="translate(0, {2 * padding + radius})">
     <!-- <circle cx="0" cy="0" r={radius} fill="none" stroke="black" /> -->
     <Drawings {drawings} {monthScale} {radialScale} />
+    <Letters {monthScale} {radialScale} {months} {year} />
     {#each months as month, i}
       <line
         class="line-{month}-{i}"
