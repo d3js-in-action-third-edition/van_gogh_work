@@ -1,5 +1,6 @@
 <script>
   import { fly, fade } from "svelte/transition";
+  import { subjects } from "../utils/subjects";
 
   export let x;
   export let y;
@@ -10,6 +11,7 @@
   export let medium;
   export let currentLocation;
   export let dimensions;
+  export let subject;
 </script>
 
 <div
@@ -22,6 +24,11 @@
     <a href={url} target="_blank" {title}><img src={url} {title} /></a>
   </div>
   <div class="metadata">
+    <div
+      class="subject"
+      style="background-color: {subjects.find((s) => s.subject === subject)
+        .color}"
+    />
     <h3 class="title">{title}</h3>
     <div class="date">{createdIn}, {date}</div>
     <div class="medium">medium: {medium}</div>
@@ -49,10 +56,18 @@
     height: 300px;
   }
   .metadata {
+    position: relative;
     max-width: 600px;
-    padding: 10px 30px 10px 15px;
+    padding: 10px 30px 10px 25px;
   }
   .title {
     font-family: $fontSecondary;
+  }
+  .subject {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 100%;
   }
 </style>

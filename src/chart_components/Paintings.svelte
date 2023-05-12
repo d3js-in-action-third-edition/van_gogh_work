@@ -69,6 +69,7 @@
       currentLocation: node.current_location,
       dimensions:
         node.width_cm !== null ? `${node.width_cm} x ${node.height_cm} cm` : "",
+      subject: node.subject,
     };
   };
   const handleMouseLeave = () => {
@@ -78,25 +79,29 @@
 
 {#each nodes as node}
   <circle
+    class:watercolor={node.medium === "watercolor"}
+    class:print={node.medium === "print"}
     cx={node.x}
     cy={node.y}
     r={node.width_cm === null
       ? defaultRadius
       : circleRadiusScale(Math.sqrt(node.width_cm * node.height_cm))}
     fill={node.subject !== "" ? colorScale(node.subject) : "white"}
-    stroke={node.medium === "oil"
-      ? "none"
-      : node.medium === "watercolor"
-      ? "black"
-      : "cyan"}
     on:mouseover={(e) => handleMouseEnter(e, node)}
     on:focus={(e) => handleMouseEnter(e, node)}
     on:mouseleave={() => handleMouseLeave()}
   />
 {/each}
 
-<style>
+<style lang="scss">
   circle {
     cursor: pointer;
+    stroke: $white;
+    &.watercolor {
+      stroke: $text;
+    }
+    &.print {
+      stroke: #4bbfa7;
+    }
   }
 </style>

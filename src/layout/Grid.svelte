@@ -6,7 +6,7 @@
   import drawings from "../data/drawings.json";
   import paintings from "../data/paintings_subject-link.json";
 
-  const years = range(1880, 1891);
+  const years = range(1881, 1891);
   const padding = 30;
   const container = 1400;
   let windowWidth;
@@ -114,6 +114,7 @@
       medium={tooltipMeta.medium}
       currentLocation={tooltipMeta.currentLocation}
       dimensions={tooltipMeta.dimensions}
+      subject={tooltipMeta.subject}
     />
   {/if}
 </div>

@@ -191,7 +191,7 @@
     "monthIndex": 8,
     "width_cm": 34,
     "height_cm": 25,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Cluster_of_Old_Houses_with_the_New_Church_in_The_Hague.jpg"
   },
   {
@@ -308,7 +308,7 @@
     "monthIndex": 8,
     "width_cm": 33,
     "height_cm": 50,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Farmhouses_in_Loosduinen_near_The_Hague_at_Twilight.jpg"
   },
   {
@@ -360,7 +360,7 @@
     "monthIndex": 9,
     "width_cm": 35.5,
     "height_cm": 55.5,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Van_Gogh_-_Bauernh%C3%A4user.jpeg"
   },
   {
@@ -373,7 +373,7 @@
     "monthIndex": 9,
     "width_cm": 28.5,
     "height_cm": 39.5,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Van_Gogh_-_Bauernhaus_zwischen_B%C3%A4umen.jpeg"
   },
   {
@@ -477,7 +477,7 @@
     "monthIndex": 2,
     "width_cm": 34.5,
     "height_cm": 42,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Van_Gogh_-Der_alte_Friedhofsturm_in_Nuenen_mit_pl%C3%BCgenden_Bauern.jpeg"
   },
   {
@@ -529,7 +529,7 @@
     "monthIndex": 5,
     "width_cm": 33.5,
     "height_cm": 44,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Van_Gogh_-_Der_alte_Friedhofsturm_in_Nuenen_mit_drei_Figuren.jpeg"
   },
   {
@@ -581,7 +581,7 @@
     "monthIndex": 5,
     "width_cm": 57.5,
     "height_cm": 78,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Vincent_van_Gogh_-_Water_mill_at_Kollen_%281884%29.jpg"
   },
   {
@@ -607,7 +607,7 @@
     "monthIndex": 5,
     "width_cm": 47.5,
     "height_cm": 55,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Van_Gogh_-_Der_alte_Friedhofsturm_in_Nuenen.jpeg"
   },
   {
@@ -685,7 +685,7 @@
     "monthIndex": 7,
     "width_cm": 35,
     "height_cm": 47,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Vincent_van_Gogh_-_The_Old_Tower_at_Dusk_-_F40_JH507.jpg"
   },
   {
@@ -698,7 +698,7 @@
     "monthIndex": 8,
     "width_cm": 57,
     "height_cm": 82,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Van_Gogh_-_Dorf_bei_Sonnenuntergang.jpeg"
   },
   {
@@ -828,7 +828,7 @@
     "monthIndex": 11,
     "width_cm": 60,
     "height_cm": 78.5,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Van_Gogh_-_Wasserm%C3%BChle_in_Gennep3.jpeg"
   },
   {
@@ -841,7 +841,7 @@
     "monthIndex": 11,
     "width_cm": 60,
     "height_cm": 78.5,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/61/Vincent_van_Gogh_-_Watermolen_in_Gennep.jpg"
   },
   {
@@ -854,7 +854,7 @@
     "monthIndex": 11,
     "width_cm": 60,
     "height_cm": 78.5,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/77/Van_Gogh_-_Wasserm%C3%BChle_in_Gennep2.jpeg"
   },
   {
@@ -867,7 +867,7 @@
     "monthIndex": 11,
     "width_cm": 45,
     "height_cm": 58,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Vincent_van_Gogh_-_Water_mill_at_Opwetten_%281884%29.jpg"
   },
   {
@@ -1296,7 +1296,7 @@
     "monthIndex": 1,
     "width_cm": 30,
     "height_cm": 41.5,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Van_Gogh_-_Der_alte_Friedhofsturm_in_Nuenen_im_Schnee.jpeg"
   },
   {
@@ -1309,7 +1309,7 @@
     "monthIndex": 1,
     "width_cm": 13.5,
     "height_cm": 24,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/b/b7/The-old-station-at-eindhoven-1885.jpg"
   },
   {
@@ -2037,7 +2037,7 @@
     "monthIndex": 5,
     "width_cm": 65,
     "height_cm": 88,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/98/De_oude_kerktoren_te_Nuenen_%28%60Het_boerenkerkhof%27%29_-_s0002V1962_-_Van_Gogh_Museum.jpg"
   },
   {
@@ -2050,7 +2050,7 @@
     "monthIndex": 5,
     "width_cm": 65.7,
     "height_cm": 79.3,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/dc/De_hut_-_s0087V1962_-_Van_Gogh_Museum.jpg"
   },
   {
@@ -2193,7 +2193,7 @@
     "monthIndex": 6,
     "width_cm": 32,
     "height_cm": 46,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Van_Gogh_-_Bauernhaus_mit_B%C3%A4umen.jpeg"
   },
   {
@@ -2206,7 +2206,7 @@
     "monthIndex": 6,
     "width_cm": 32,
     "height_cm": 46,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Vincent_van_Gogh_-_Farmhouse_%281885%29.jpg"
   },
   {
@@ -2245,7 +2245,7 @@
     "monthIndex": 6,
     "width_cm": 35.5,
     "height_cm": 67,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Van_gogh_cottage_f91_jh809.jpg"
   },
   {
@@ -2258,7 +2258,7 @@
     "monthIndex": 6,
     "width_cm": 32,
     "height_cm": 46,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Van_Gogh_-_Bauernhaus_mit_B%C3%A4umen1.jpeg"
   },
   {
@@ -2284,7 +2284,7 @@
     "monthIndex": 7,
     "width_cm": 35.5,
     "height_cm": 67,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Van_Gogh_-_Bauernhaus1.jpeg"
   },
   {
@@ -2739,7 +2739,7 @@
     "monthIndex": 10,
     "width_cm": 33,
     "height_cm": 43,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/df/De_pastorie_te_Nuenen_-_s0140V1962_-_Van_Gogh_Museum.jpg"
   },
   {
@@ -2778,7 +2778,7 @@
     "monthIndex": 10,
     "width_cm": 19,
     "height_cm": 25.5,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Van_Gogh_-_Blick_auf_Amsterdam_vom_Hauptbahnhof.jpeg"
   },
   {
@@ -2791,7 +2791,7 @@
     "monthIndex": 10,
     "width_cm": 35,
     "height_cm": 47,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/Van_Gogh_-_Stadtansicht_von_Amsterdam.jpeg"
   },
   {
@@ -2817,7 +2817,7 @@
     "monthIndex": 10,
     "width_cm": 42,
     "height_cm": 49.5,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Van_Gogh_-_Stadtansicht_mit_Gracht_und_Zugbr%C3%BCcke.jpeg"
   },
   {
@@ -2856,7 +2856,7 @@
     "monthIndex": 10,
     "width_cm": 20.3,
     "height_cm": 27,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/De_Ruijterkade_te_Amsterdam_-_s0085V1962_-_Van_Gogh_Museum.jpg"
   },
   {
@@ -2895,7 +2895,7 @@
     "monthIndex": 11,
     "width_cm": 41,
     "height_cm": 54.5,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/65/Van_Gogh_-_Das_Pfarrhaus_in_Nuenen_bei_Mondschein.jpeg"
   },
   {
@@ -2973,7 +2973,7 @@
     "monthIndex": 2,
     "width_cm": 44,
     "height_cm": 33.5,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Achterkanten_van_huizen_-_s0142V1962_-_Van_Gogh_Museum.jpg"
   },
   {
@@ -3064,7 +3064,7 @@
     "monthIndex": 6,
     "width_cm": 27,
     "height_cm": 22.5,
-    "subject": "nude",
+    "subject": "other",
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/65/Zittend_naakt_meisje_-_s0090V1962_-_Van_Gogh_Museum.jpg"
   },
   {
@@ -3324,7 +3324,7 @@
     "monthIndex": 6,
     "width_cm": 30,
     "height_cm": 41,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Gezicht_vanuit_Vincents_atelier_-_s0095V1962_-_Van_Gogh_Museum.jpg"
   },
   {
@@ -3337,7 +3337,7 @@
     "monthIndex": 6,
     "width_cm": 44.5,
     "height_cm": 37,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Vincent_van_Gogh_-_Vue_de_Paris_aux_environs_de_Montmartre.jpg"
   },
   {
@@ -3350,7 +3350,7 @@
     "monthIndex": 7,
     "width_cm": 54,
     "height_cm": 72.5,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Gezicht_op_Parijs_-_s0013V1962_-_Van_Gogh_Museum.jpg"
   },
   {
@@ -3363,7 +3363,7 @@
     "monthIndex": 6,
     "width_cm": 38.5,
     "height_cm": 61,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Vista_de_Par%C3%ADs_desde_Montmartre%2C_por_Vincent_van_Gogh.jpg"
   },
   {
@@ -3441,7 +3441,7 @@
     "monthIndex": 0,
     "width_cm": 44,
     "height_cm": 39,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Van_Gogh_-_Der_14._Juli_in_Paris.jpeg"
   },
   {
@@ -3454,7 +3454,7 @@
     "monthIndex": 0,
     "width_cm": 31,
     "height_cm": 44,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Vincent_van_Gogh_-_Pont_du_Carrousel_and_the_Louvre.jpg"
   },
   {
@@ -3467,7 +3467,7 @@
     "monthIndex": 0,
     "width_cm": 37.5,
     "height_cm": 45.5,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Van_Gogh_-_Spazierg%C3%A4nger_im_Bois_de_Boulogne1.jpeg"
   },
   {
@@ -3480,7 +3480,7 @@
     "monthIndex": 0,
     "width_cm": 27.5,
     "height_cm": 46,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Van_Gogh_-_Allee_im_Jardin_du_Luxembourg.jpeg"
   },
   {
@@ -3493,7 +3493,7 @@
     "monthIndex": 0,
     "width_cm": 46.5,
     "height_cm": 37,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/00/Van_Gogh_-_Spazierg%C3%A4nger_im_Bois_de_Boulogne.jpeg"
   },
   {
@@ -3506,7 +3506,7 @@
     "monthIndex": 0,
     "width_cm": 46.5,
     "height_cm": 37,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/28/Van_Gogh_-_Spazierg%C3%A4nger_im_Bois_de_Boulogne2.jpeg"
   },
   {
@@ -3519,7 +3519,7 @@
     "monthIndex": 5,
     "width_cm": 22,
     "height_cm": 16,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Weg_te_Montmartre_-_s0092V1962_-_Van_Gogh_Museum.jpg"
   },
   {
@@ -3532,7 +3532,7 @@
     "monthIndex": 0,
     "width_cm": 15,
     "height_cm": 10,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/81/Van_Gogh_-_Blick_auf_Montemartre_vor_einem_Gewitter.jpeg"
   },
   {
@@ -3545,7 +3545,7 @@
     "monthIndex": 0,
     "width_cm": 46,
     "height_cm": 38,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/34/Van_Gogh_-_Le_Moulin_de_la_Galette.jpeg"
   },
   {
@@ -3558,7 +3558,7 @@
     "monthIndex": 0,
     "width_cm": 46.5,
     "height_cm": 38,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Vincent_van_Gogh_-_Windmills_on_Montmartre_-_Google_Art_Project.jpg"
   },
   {
@@ -3571,7 +3571,7 @@
     "monthIndex": 0,
     "width_cm": 55.2,
     "height_cm": 0,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Vincent_van_Gogh_-_Le_Moulin_de_blute-fin%281886%29.jpg"
   },
   {
@@ -4078,7 +4078,7 @@
     "monthIndex": 0,
     "width_cm": 46,
     "height_cm": 38,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Van_Gogh_-_Le_Moulin_de_la_Galette3.jpeg"
   },
   {
@@ -4091,7 +4091,7 @@
     "monthIndex": 0,
     "width_cm": 46,
     "height_cm": 38,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/63/Van_Gogh_-_Le_Moulin_de_la_Galette2.jpeg"
   },
   {
@@ -4104,7 +4104,7 @@
     "monthIndex": 0,
     "width_cm": 46,
     "height_cm": 38,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Van_Gogh_-_Le_Moulin_de_la_Galette1.jpeg"
   },
   {
@@ -4117,7 +4117,7 @@
     "monthIndex": 0,
     "width_cm": 36,
     "height_cm": 61,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/The_hill_of_Monmartre.jpg"
   },
   {
@@ -4130,7 +4130,7 @@
     "monthIndex": 7,
     "width_cm": 32,
     "height_cm": 41,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Vincent_van_Gogh_-_De_heuvel_van_Montmartre_met_steengroeve_-_Google_Art_Project.jpg"
   },
   {
@@ -4143,7 +4143,7 @@
     "monthIndex": 7,
     "width_cm": 32,
     "height_cm": 41,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/De_heuvel_van_Montmartre_met_steengroeve_-_s0012V1962_-_Van_Gogh_Museum.jpg"
   },
   {
@@ -4156,7 +4156,7 @@
     "monthIndex": 0,
     "width_cm": 49,
     "height_cm": 64,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/Van_Gogh_-_Gartenlokal_%22La_Guinguette%22_auf_dem_Montmartre.jpg"
   },
   {
@@ -4169,7 +4169,7 @@
     "monthIndex": 0,
     "width_cm": 45.7,
     "height_cm": 54.6,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/Van_Gogh_-_Am_Stadtrand_von_Paris.jpeg"
   },
   {
@@ -4182,7 +4182,7 @@
     "monthIndex": 0,
     "width_cm": 22,
     "height_cm": 33,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Van_Gogh_-_Blick_auf_Montmartre_mit_Steinbruch.jpeg"
   },
   {
@@ -4195,7 +4195,7 @@
     "monthIndex": 0,
     "width_cm": 46,
     "height_cm": 38,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Vincent_van_Gogh_-_Le_Moulin_de_la_Galette_-_Google_Art_Project.jpg"
   },
   {
@@ -4208,7 +4208,7 @@
     "monthIndex": 0,
     "width_cm": 43.6,
     "height_cm": 33,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Vincent_van_Gogh_-_Terrace_and_Observation_Deck_at_the_Moulin_de_Blute-Fin%2C_Montmartre_-_1926.202_-_Art_Institute_of_Chicago.jpg"
   },
   {
@@ -4221,7 +4221,7 @@
     "monthIndex": 0,
     "width_cm": 46,
     "height_cm": 38,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Van_Gogh_-_Le_Moulin_de_la_Galette4.jpeg"
   },
   {
@@ -4234,7 +4234,7 @@
     "monthIndex": 0,
     "width_cm": 46.5,
     "height_cm": 38,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Windmill_on_Montmartre_%28destroyed%29_%28JH_1186%29_-_My_Dream.jpg"
   },
   {
@@ -4481,7 +4481,7 @@
     "monthIndex": 0,
     "width_cm": 38,
     "height_cm": 61,
-    "subject": "nude",
+    "subject": "other",
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Van_Gogh_-_Weiblicher_R%C3%BCckenakt.jpeg"
   },
   {
@@ -4494,7 +4494,7 @@
     "monthIndex": 0,
     "width_cm": 59.5,
     "height_cm": 73,
-    "subject": "nude",
+    "subject": "other",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Vincent_van_Gogh_-_Reclining_Nude_%28Femme_nue_%C3%A9tendue_sur_un_lit%29_-_BF720_-_Barnes_Foundation.jpg"
   },
   {
@@ -4507,7 +4507,7 @@
     "monthIndex": 0,
     "width_cm": 24,
     "height_cm": 41,
-    "subject": "nude",
+    "subject": "other",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Van_Gogh_-_Liegender_weiblicher_Akt.jpeg"
   },
   {
@@ -4533,7 +4533,7 @@
     "monthIndex": 4,
     "width_cm": 42.5,
     "height_cm": 55,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Boulevard_de_Clichy_-_s0094V1962_-_Van_Gogh_Museum.jpg"
   },
   {
@@ -4546,7 +4546,7 @@
     "monthIndex": 0,
     "width_cm": 46,
     "height_cm": 38,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Vincent_van_Gogh_-_Le_Moulin_de_la_Galette.jpg"
   },
   {
@@ -4754,7 +4754,7 @@
     "monthIndex": 0,
     "width_cm": 46,
     "height_cm": 61,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/84/Sc%C3%A8ne_de_Rue_%C3%A0_Montmartre.jpg"
   },
   {
@@ -4767,7 +4767,7 @@
     "monthIndex": 4,
     "width_cm": 34.5,
     "height_cm": 64.5,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Impasse_des_Deux_Fr%C3%A8res_-_s0014V1962_-_Van_Gogh_Museum.jpg"
   },
   {
@@ -4780,7 +4780,7 @@
     "monthIndex": 4,
     "width_cm": 46,
     "height_cm": 38,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Vincent_van_Gogh_-_View_from_Theo%E2%80%99s_apartment_-_Google_Art_Project.jpg"
   },
   {
@@ -4793,7 +4793,7 @@
     "monthIndex": 4,
     "width_cm": 46,
     "height_cm": 38,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Van_Gogh_-_Blick_auf_Paris_aus_Vincents_Zimmer_in_der_Rue_Lepic1.jpeg"
   },
   {
@@ -4806,7 +4806,7 @@
     "monthIndex": 4,
     "width_cm": 44.8,
     "height_cm": 81,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Vincent_van_Gogh_-_Montmartre-_molens_en_moestuinen_-_Google_Art_Project.jpg"
   },
   {
@@ -4819,7 +4819,7 @@
     "monthIndex": 0,
     "width_cm": 96,
     "height_cm": 120,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Vincent_Willem_van_Gogh_045.jpg"
   },
   {
@@ -4832,7 +4832,7 @@
     "monthIndex": 7,
     "width_cm": 81,
     "height_cm": 100,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Vincent_van_Gogh_-_Montmartre-_achter_de_Moulin_de_la_Galette_-_Google_Art_Project.jpg"
   },
   {
@@ -4897,7 +4897,7 @@
     "monthIndex": 0,
     "width_cm": 54.5,
     "height_cm": 65.5,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Van_Gogh_-_Das_Restaurant_de_la_Sir%C3%A9ne_in_Asni%C3%A9res.jpeg"
   },
   {
@@ -4910,7 +4910,7 @@
     "monthIndex": 0,
     "width_cm": 51.5,
     "height_cm": 64,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/25/Van_Gogh_-_Das_Restaurant_de_la_Sir%C3%A8ne_in_Asni%C3%A8res.jpeg"
   },
   {
@@ -4923,7 +4923,7 @@
     "monthIndex": 7,
     "width_cm": 49,
     "height_cm": 65.5,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/29/Vincent_van_Gogh_-_Langs_de_Seine_-_Google_Art_Project.jpg"
   },
   {
@@ -4936,7 +4936,7 @@
     "monthIndex": 0,
     "width_cm": 38,
     "height_cm": 46,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/04/Van_Gogh_-_Am_Stadtrand_von_Paris1.jpeg"
   },
   {
@@ -4949,7 +4949,7 @@
     "monthIndex": 0,
     "width_cm": 45.5,
     "height_cm": 56.5,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Van_Gogh_-_Interieur_eines_Restaurants.jpeg"
   },
   {
@@ -4975,7 +4975,7 @@
     "monthIndex": 5,
     "width_cm": 75,
     "height_cm": 112.5,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Vincent_van_Gogh_-_Tuin_in_Montmartre_met_geliefden_-_Google_Art_Project.jpg"
   },
   {
@@ -4988,7 +4988,7 @@
     "monthIndex": 0,
     "width_cm": 59,
     "height_cm": 81,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Corner_in_Voyer-d%27Argenson_Park_at_Asni%C3%A8res_by_Vincent_van_Gogh.jpeg"
   },
   {
@@ -5001,7 +5001,7 @@
     "monthIndex": 0,
     "width_cm": 48,
     "height_cm": 73,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Van_Gogh_-_Stra%C3%9Fe_am_Stadtrand_von_Paris_mit_M%C3%A4nnlicher_Figur_mit_Spaten.jpeg"
   },
   {
@@ -5066,7 +5066,7 @@
     "monthIndex": 0,
     "width_cm": 55,
     "height_cm": 67,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Entrata_Parco_Vincent_van_Gogh.jpg"
   },
   {
@@ -5079,7 +5079,7 @@
     "monthIndex": 0,
     "width_cm": 72,
     "height_cm": 60,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Van_Gogh_-_Das_Restaurant_Rispal_in_Asni%C3%A9res.jpeg"
   },
   {
@@ -5092,7 +5092,7 @@
     "monthIndex": 0,
     "width_cm": 32.7,
     "height_cm": 41,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/28/Van_Gogh_-_Viadukt_in_Paris.jpeg"
   },
   {
@@ -5105,7 +5105,7 @@
     "monthIndex": 0,
     "width_cm": 53,
     "height_cm": 73,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Van_Gogh_-_Seinebr%C3%BCcke_bei_Asni%C3%A8res.jpeg"
   },
   {
@@ -5118,7 +5118,7 @@
     "monthIndex": 7,
     "width_cm": 32,
     "height_cm": 46,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Oever_van_de_Seine_-_s0077V1962_-_Van_Gogh_Museum.jpg"
   },
   {
@@ -5131,7 +5131,7 @@
     "monthIndex": 0,
     "width_cm": 50.5,
     "height_cm": 60,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Vincent_van_Gogh_-_Fishing_in_Spring%2C_the_Pont_de_Clichy_%28Asni%C3%A8res%29_-_1965.1169_-_Art_Institute_of_Chicago.jpg"
   },
   {
@@ -5144,7 +5144,7 @@
     "monthIndex": 0,
     "width_cm": 48,
     "height_cm": 55,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Van_Gogh_-_Seineufer_mit_Booten.jpeg"
   },
   {
@@ -5209,7 +5209,7 @@
     "monthIndex": 5,
     "width_cm": 33,
     "height_cm": 42,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Square_Saint-Pierre_bij_zonsondergang_-_s0098V1962_-_Van_Gogh_Museum.jpg"
   },
   {
@@ -5222,7 +5222,7 @@
     "monthIndex": 0,
     "width_cm": 54,
     "height_cm": 72,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Van_Gogh_-_Fabriken_in_Asni%C3%A8res%2C_vom_Quai_de_Clichy_aus_gesehen.jpeg"
   },
   {
@@ -5235,7 +5235,7 @@
     "monthIndex": 0,
     "width_cm": 46.5,
     "height_cm": 54,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Vincent_van_Gogh_-_The_Factory_-_BF303_-_Barnes_Foundation.jpg"
   },
   {
@@ -5417,7 +5417,7 @@
     "monthIndex": 0,
     "width_cm": 32,
     "height_cm": 41,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Vincent_van_Gogh_-_Shelter_on_Montmartre_%281887%29.jpg"
   },
   {
@@ -5469,7 +5469,7 @@
     "monthIndex": 6,
     "width_cm": 18.5,
     "height_cm": 27,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/Voor_een_restaurant_te_Asni%C3%A8res_-_s0134V1962_-_Van_Gogh_Museum.jpg"
   },
   {
@@ -5586,7 +5586,7 @@
     "monthIndex": 0,
     "width_cm": 50,
     "height_cm": 60,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/Van_Gogh_-_Seineufer_im_Fr%C3%BChling_an_der_Pont_de_Clichy.jpeg"
   },
   {
@@ -5599,7 +5599,7 @@
     "monthIndex": 0,
     "width_cm": 30.5,
     "height_cm": 39,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/98/Van_Gogh_-_Seineufer_bei_der_Pont_de_Clichy.jpeg"
   },
   {
@@ -5612,7 +5612,7 @@
     "monthIndex": 0,
     "width_cm": 55,
     "height_cm": 46,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Van_Gogh_-_Die_Seine_mit_der_Pont_de_Clichy.jpeg"
   },
   {
@@ -5625,7 +5625,7 @@
     "monthIndex": 0,
     "width_cm": 19,
     "height_cm": 27,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Van_Gogh_-_Badeboot_an_der_Seine_bei_Asni%C3%A8res.jpeg"
   },
   {
@@ -5638,7 +5638,7 @@
     "monthIndex": 87,
     "width_cm": 32,
     "height_cm": 40.5,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/De_brug_bij_Courbevoie_-_s0086V1962_-_Van_Gogh_Museum.jpg"
   },
   {
@@ -5651,7 +5651,7 @@
     "monthIndex": 0,
     "width_cm": 52,
     "height_cm": 65,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/01/Vincent_van_Gogh_-_Bridges_across_the_Seine_at_Asnieres.jpg"
   },
   {
@@ -6041,7 +6041,7 @@
     "monthIndex": 2,
     "width_cm": 39.5,
     "height_cm": 32.5,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Gezicht_op_een_slagerswinkel_-_s0119V1962_-_Van_Gogh_Museum.jpg"
   },
   {
@@ -6132,7 +6132,7 @@
     "monthIndex": 3,
     "width_cm": 46,
     "height_cm": 49.5,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Van_Gogh_-_Das_Viadukt_in_Arles_oder_Der_blaue_Zug.jpeg"
   },
   {
@@ -6145,7 +6145,7 @@
     "monthIndex": 3,
     "width_cm": 46,
     "height_cm": 49,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/64/Van_Gogh_-_Pont_de_Gleize_bei_Arles.jpeg"
   },
   {
@@ -6158,7 +6158,7 @@
     "monthIndex": 3,
     "width_cm": 54,
     "height_cm": 65,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/73/Van_Gogh_-Die_Br%C3%BCcke_von_Langlois_in_Arles_mit_W%C3%A4scherinnen.jpeg"
   },
   {
@@ -6184,7 +6184,7 @@
     "monthIndex": 3,
     "width_cm": 59.5,
     "height_cm": 74,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Vincent_van_Gogh_-_De_brug_van_Langlois_-_Google_Art_Project.jpg"
   },
   {
@@ -6314,7 +6314,7 @@
     "monthIndex": 4,
     "width_cm": 60,
     "height_cm": 65,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/60/Van_Gogh_-_Die_Br%C3%BCcke_von_Langlois_in_Arles2.jpeg"
   },
   {
@@ -6457,7 +6457,7 @@
     "monthIndex": 5,
     "width_cm": 49.5,
     "height_cm": 64,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/The_Langlois_Bridge_at_Arles_-_My_Dream.jpg"
   },
   {
@@ -6574,7 +6574,7 @@
     "monthIndex": 6,
     "width_cm": 46.1,
     "height_cm": 60.9,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/Farmhouse_in_Provence%2C_1888%2C_Vincent_van_Gogh%2C_NGA.jpg"
   },
   {
@@ -6587,7 +6587,7 @@
     "monthIndex": 6,
     "width_cm": 64,
     "height_cm": 53,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Van_Gogh_-_Blick_auf_Saites-Maries1.jpeg"
   },
   {
@@ -6639,7 +6639,7 @@
     "monthIndex": 6,
     "width_cm": 38.3,
     "height_cm": 46.1,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Van_Gogh_-_Gasse_in_Saintes-Maries2.jpeg"
   },
   {
@@ -6652,7 +6652,7 @@
     "monthIndex": 6,
     "width_cm": 33.5,
     "height_cm": 41.5,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/95/Van_Gogh_-_Drei_wei%C3%9Fe_H%C3%BCtten_in_Saintes-Maries.jpeg"
   },
   {
@@ -6678,7 +6678,7 @@
     "monthIndex": 6,
     "width_cm": 65,
     "height_cm": 81,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/Van_Gogh_-_Die_Br%C3%BCcke_von_Triquetaille.jpeg"
   },
   {
@@ -6860,7 +6860,7 @@
     "monthIndex": 7,
     "width_cm": 74,
     "height_cm": 60,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Van_Gogh_-_Der_Kanal_%22La_Roubine_du_Roi%22_mit_Waschfrauen.jpeg"
   },
   {
@@ -7263,7 +7263,7 @@
     "monthIndex": 9,
     "width_cm": 64.5,
     "height_cm": 54,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Vincent_van_Gogh_-_La_Maison_de_la_Crau.jpg"
   },
   {
@@ -7289,7 +7289,7 @@
     "monthIndex": 9,
     "width_cm": 81,
     "height_cm": 65.5,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Vincent_van_Gogh_%281853-1890%29_Caf%C3%A9terras_bij_nacht_%28place_du_Forum%29_Kr%C3%B6ller-M%C3%BCller_Museum_Otterlo_23-8-2016_13-35-40.JPG"
   },
   {
@@ -7328,7 +7328,7 @@
     "monthIndex": 9,
     "width_cm": 72.5,
     "height_cm": 91,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Vincent_van_Gogh_-_Entrance_to_the_Public_Gardens_in_Arle_-_Google_Art_Project.jpg"
   },
   {
@@ -7367,7 +7367,7 @@
     "monthIndex": 9,
     "width_cm": 72,
     "height_cm": 91.5,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Vincent_van_Gogh_-_The_yellow_house_%28%27The_street%27%29.jpg"
   },
   {
@@ -7471,7 +7471,7 @@
     "monthIndex": 10,
     "width_cm": 73,
     "height_cm": 92,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Van_Gogh_-_Paar_im_Park_von_Arles_-_Der_Garten_des_Dichters_III.jpeg"
   },
   {
@@ -7484,7 +7484,7 @@
     "monthIndex": 10,
     "width_cm": 71,
     "height_cm": 92,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/73/Vincent_Willem_van_Gogh_039.jpg"
   },
   {
@@ -7497,7 +7497,7 @@
     "monthIndex": 10,
     "width_cm": 73.5,
     "height_cm": 92.5,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Vincent_Willem_van_Gogh_030.jpg"
   },
   {
@@ -7510,7 +7510,7 @@
     "monthIndex": 10,
     "width_cm": 72,
     "height_cm": 92,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Van_Gogh_-_Die_Postkutsche_nach_Tarascon.jpeg"
   },
   {
@@ -9382,7 +9382,7 @@
     "monthIndex": 10,
     "width_cm": 44.5,
     "height_cm": 60,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Vincent_Van_Gogh_-_Vue_de_l%27asile_et_de_la_Chapelle_de_Saint-R%C3%A9my.jpg"
   },
   {
@@ -9447,7 +9447,7 @@
     "monthIndex": 11,
     "width_cm": 58,
     "height_cm": 45,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Hospital_in_Saint-Remy.jpg"
   },
   {
@@ -9720,7 +9720,7 @@
     "monthIndex": 12,
     "width_cm": 70,
     "height_cm": 60,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Van_Gogh_-_Wei%C3%9Fes_Bauernhaus_zwischen_Olivenb%C3%A4umen.jpeg"
   },
   {
@@ -9798,7 +9798,7 @@
     "monthIndex": 12,
     "width_cm": 45.5,
     "height_cm": 60,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Van_Gogh_-_H%C3%BCtten_zwischen_Olivenb%C3%A4umen_und_Zypressen.jpeg"
   },
   {
@@ -10032,7 +10032,7 @@
     "monthIndex": 2,
     "width_cm": 50,
     "height_cm": 39,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Vincent_van_Gogh_-_Houses_and_Figure_-_BF136_-_Barnes_Foundation.jpg"
   },
   {
@@ -10045,7 +10045,7 @@
     "monthIndex": 4,
     "width_cm": 45.5,
     "height_cm": 43,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Van_Gogh_-_Bauernh%C3%A4user_%28Erinnerung_an_den_Norden%29.jpeg"
   },
   {
@@ -10058,7 +10058,7 @@
     "monthIndex": 4,
     "width_cm": 29,
     "height_cm": 36.5,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Herinnering_aan_Brabant_-_s0112V1962_-_Van_Gogh_Museum.jpg"
   },
   {
@@ -10292,7 +10292,7 @@
     "monthIndex": 5,
     "width_cm": 60,
     "height_cm": 73,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/Gogh%2C_Vincent_van_-_Cottages.jpg"
   },
   {
@@ -10305,7 +10305,7 @@
     "monthIndex": 5,
     "width_cm": 72,
     "height_cm": 60.5,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Houses_at_Auvers_by_Vincent_Van_Gogh.jpg"
   },
   {
@@ -10344,7 +10344,7 @@
     "monthIndex": 5,
     "width_cm": 49,
     "height_cm": 70,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Van_Gogh_-_Das_Haus_von_P%C3%A8re_Pilon.jpeg"
   },
   {
@@ -10370,7 +10370,7 @@
     "monthIndex": 5,
     "width_cm": 73,
     "height_cm": 92,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/Vincent_van_Gogh_-_Street_in_Auvers-sur-Oise_-_Google_Art_Project.jpg"
   },
   {
@@ -10383,7 +10383,7 @@
     "monthIndex": 5,
     "width_cm": 51,
     "height_cm": 58,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Van_Gogh_-_Das_Haus_von_P%C3%A8re_Eloi.jpeg"
   },
   {
@@ -10422,7 +10422,7 @@
     "monthIndex": 5,
     "width_cm": 49.8,
     "height_cm": 70.1,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Vincent_van_Gogh_-_Stairway_at_Auvers_%281890%29.jpg"
   },
   {
@@ -10435,7 +10435,7 @@
     "monthIndex": 6,
     "width_cm": 50,
     "height_cm": 52,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/25/Gezicht_op_Auvers_-_s0105V1962_-_Van_Gogh_Museum.jpg"
   },
   {
@@ -10448,7 +10448,7 @@
     "monthIndex": 6,
     "width_cm": 38,
     "height_cm": 45,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Boerderij_-_s0108V1962_-_Van_Gogh_Museum.jpg"
   },
   {
@@ -10461,7 +10461,7 @@
     "monthIndex": 6,
     "width_cm": 20.5,
     "height_cm": 26,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/83/Van_Gogh_-_Treppe_in_Auvers_mit_zwei_Figuren.jpeg"
   },
   {
@@ -10474,7 +10474,7 @@
     "monthIndex": 6,
     "width_cm": 72,
     "height_cm": 91,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/Vincent_van_Gogh_-_Thatched_Cottages_at_Cordeville_-_Google_Art_Project.jpg"
   },
   {
@@ -10487,7 +10487,7 @@
     "monthIndex": 6,
     "width_cm": 60.6,
     "height_cm": 73,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Vincent_van_Gogh_-_Houses_at_Auvers_-_Google_Art_Project.jpg"
   },
   {
@@ -10513,7 +10513,7 @@
     "monthIndex": 6,
     "width_cm": 94,
     "height_cm": 74,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Vincent_van_Gogh_-_The_Church_in_Auvers-sur-Oise%2C_View_from_the_Chevet_-_Google_Art_Project.jpg"
   },
   {
@@ -10578,7 +10578,7 @@
     "monthIndex": 6,
     "width_cm": 33,
     "height_cm": 40.5,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Van_Gogh_-_Bauernh%C3%A4user_in_Jorgus_mit_Figuren.jpeg"
   },
   {
@@ -10617,7 +10617,7 @@
     "monthIndex": 6,
     "width_cm": 64.2,
     "height_cm": 79.5,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/99/Vincent_van_Gogh_-_Vineyards_at_Auvers_%281890%29.jpg"
   },
   {
@@ -10682,7 +10682,7 @@
     "monthIndex": 6,
     "width_cm": 59.5,
     "height_cm": 73,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Whitehousenight.jpg"
   },
   {
@@ -11137,7 +11137,7 @@
     "monthIndex": 7,
     "width_cm": 72,
     "height_cm": 93,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Van_Gogh_-_Das_Rathaus_in_Auvers_am_14._Juli_1890.jpeg"
   },
   {
@@ -11176,7 +11176,7 @@
     "monthIndex": 7,
     "width_cm": 50.2,
     "height_cm": 100.3,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/VanGoghThatchedCottagesByAHill.jpg"
   },
   {
@@ -11189,7 +11189,7 @@
     "monthIndex": 7,
     "width_cm": 65,
     "height_cm": 81,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Vincent_van_Gogh_-_Rietgedekte_zandstenen_huisjes_in_Chaponval_%281890%29.jpg"
   },
   {
@@ -11254,7 +11254,7 @@
     "monthIndex": 7,
     "width_cm": 34,
     "height_cm": 42,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Van_Gogh_-_Blick_auf_Auvers_mit_Kirche.jpeg"
   },
   {
@@ -11306,7 +11306,7 @@
     "monthIndex": 6,
     "width_cm": null,
     "height_cm": null,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/68/Van_Gogh_Garden_with_Arbor_f902_JH9.jpg"
   },
   {
@@ -11319,7 +11319,7 @@
     "monthIndex": 8,
     "width_cm": null,
     "height_cm": null,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Windmills_near_Dordrecht_f850_jh15.jpg"
   },
   {
@@ -11774,7 +11774,7 @@
     "monthIndex": 1,
     "width_cm": null,
     "height_cm": null,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/97/View_of_The_Hague_with_the_New_Church.jpg"
   },
   {
@@ -11826,7 +11826,7 @@
     "monthIndex": 6,
     "width_cm": null,
     "height_cm": null,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/82/Fish-Drying_Barn.jpg"
   },
   {
@@ -11839,7 +11839,7 @@
     "monthIndex": 7,
     "width_cm": null,
     "height_cm": null,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Vincent_van_Gogh_-_The_%27Laakmolen%27_near_The_Hague_%28The_Windmill%29_F_884_JH_59.jpg"
   },
   {
@@ -11852,7 +11852,7 @@
     "monthIndex": 7,
     "width_cm": null,
     "height_cm": null,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Rooftops.jpg"
   },
   {
@@ -11865,7 +11865,7 @@
     "monthIndex": 7,
     "width_cm": null,
     "height_cm": null,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/85/Vincent_van_Gogh_-_Bleaching_Ground_at_Scheveningen_-_Google_Art_Project.jpg"
   },
   {
@@ -11917,7 +11917,7 @@
     "monthIndex": 7,
     "width_cm": null,
     "height_cm": null,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Vincent_Van_Gogh_-_The_Iron_Mill_in_The_Hague_%281882_July%29.jpg"
   },
   {
@@ -11982,7 +11982,7 @@
     "monthIndex": 8,
     "width_cm": null,
     "height_cm": null,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/View_of_Scheveningen.jpg"
   },
   {
@@ -12164,7 +12164,7 @@
     "monthIndex": 10,
     "width_cm": null,
     "height_cm": null,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Vincent_van_Gogh_-_The_State_Lottery_Office_%28F970%29.jpg"
   },
   {
@@ -12177,7 +12177,7 @@
     "monthIndex": 10,
     "width_cm": null,
     "height_cm": null,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/Potato_Market.jpg"
   },
   {
@@ -12398,7 +12398,7 @@
     "monthIndex": 10,
     "width_cm": null,
     "height_cm": null,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/64/F1102_jh402.jpg"
   },
   {
@@ -12411,7 +12411,7 @@
     "monthIndex": 10,
     "width_cm": null,
     "height_cm": null,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/F_1103_jh403.jpg"
   },
   {
@@ -12424,7 +12424,7 @@
     "monthIndex": 11,
     "width_cm": null,
     "height_cm": null,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/01/Vincent_van_Gogh_Ophaalbrug_in_Nieuw-Amsterdam.jpg"
   },
   {
@@ -12645,7 +12645,7 @@
     "monthIndex": 11,
     "width_cm": 60,
     "height_cm": 78.5,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/75/Gogh_-_f_1144a.jpg"
   },
   {
@@ -12762,7 +12762,7 @@
     "monthIndex": 0,
     "width_cm": null,
     "height_cm": null,
-    "subject": "building",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Moulin_de_Blute-Fin%2C_The_f1397_jh1173.jpg"
   },
   {
@@ -12775,7 +12775,7 @@
     "monthIndex": 9,
     "width_cm": null,
     "height_cm": null,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Van_Gogh_-_Weg_mit_Eingang_zu_einem_Aussichtspunkt.jpeg"
   },
   {
@@ -12788,7 +12788,7 @@
     "monthIndex": 0,
     "width_cm": null,
     "height_cm": null,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Ramparts_of_Paris_f_1402jh1280.jpg"
   },
   {
@@ -12801,7 +12801,7 @@
     "monthIndex": 0,
     "width_cm": null,
     "height_cm": null,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/The_Fortifications_of_Paris_with_Houses_or_The_Ramparts_of_Paris_f_1403.jpg"
   },
   {
@@ -12814,7 +12814,7 @@
     "monthIndex": 9,
     "width_cm": null,
     "height_cm": null,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Road_Running_Beside_the_Paris_Ramparts_f1400_jh1283.jpg"
   },
   {
@@ -12827,7 +12827,7 @@
     "monthIndex": 9,
     "width_cm": null,
     "height_cm": null,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/F_1401_jh1284.jpg"
   },
   {
@@ -12840,7 +12840,7 @@
     "monthIndex": 0,
     "width_cm": null,
     "height_cm": null,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Van_Gogh_-_Am_Stadtrand_von_Paris_nahe_Montmartre.jpeg"
   },
   {
@@ -12853,7 +12853,7 @@
     "monthIndex": 9,
     "width_cm": null,
     "height_cm": null,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/52/Gogh_-_f_1411.jpg"
   },
   {
@@ -12866,7 +12866,7 @@
     "monthIndex": 4,
     "width_cm": 49.5,
     "height_cm": 64,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Van_Gogh_-_Die_Br%C3%BCcke_von_Langlois_in_Arles1.jpeg"
   },
   {
@@ -12983,7 +12983,7 @@
     "monthIndex": 9,
     "width_cm": 72,
     "height_cm": 91.5,
-    "subject": "cityscape - street scene",
+    "subject": "cityscape - building",
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Van_Gogh_-_Das_gelbe_Haus_%28Vincents_Haus%291.jpeg"
   },
   {
@@ -13178,7 +13178,7 @@
     "monthIndex": 11,
     "width_cm": null,
     "height_cm": null,
-    "subject": "nude",
+    "subject": "other",
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/Vincent_van_Gough_-_Sorrow_%28F1655%29.jpg"
   },
   {
