@@ -16,5 +16,6 @@
 <style lang="scss">
   path {
     fill: rgba($secondary, 0.25);
+    pointer-events: none;
   }
 </style>

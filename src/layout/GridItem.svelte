@@ -4,6 +4,7 @@
   import Letters from "../chart_components/Letters.svelte";
   import { radiansToDegrees } from "../utils/helpers";
   import { scaleLinear } from "d3-scale";
+  import letters from "../data/letters.json";
 
   export let year;
   export let itemWidth;
@@ -23,13 +24,28 @@
   $: radialScale = scaleLinear()
     .domain([0, maxDrawings])
     .range([0, 2 * radius]);
+
+  let isWorkTooltipVisible = false;
+  const handleMouseEnter = () => {
+    isWorkTooltipVisible = true;
+  };
+  const handleMouseLeave = () => {
+    isWorkTooltipVisible = false;
+  };
 </script>
 
 <g transform="translate({itemWidth / 2}, 0)">
   <g transform="translate(0, {2 * padding + radius})">
-    <circle cx="0" cy="0" r={radius} fill="none" stroke="none" />
+    <circle
+      cx="0"
+      cy="0"
+      r={radius}
+      fill="transparent"
+      on:mouseenter={() => handleMouseEnter()}
+      on:mouseleave={() => handleMouseLeave()}
+    />
     <Drawings {drawings} {monthScale} {radialScale} />
-    <Letters {monthScale} {radialScale} {months} {year} />
+    <Letters {letters} {monthScale} {radialScale} {months} {year} />
     {#each months as month, i}
       <line
         class="line-{month}-{i}"
@@ -51,6 +67,23 @@
         text-anchor="middle"
         dominant-baseline="middle">{month.slice(0, 3)}</text
       >
+      <text
+        class="work-tooltip"
+        class:visible={isWorkTooltipVisible}
+        transform="translate({(radius + 48) * Math.sin(monthScale(i))}, {-1 *
+          (radius + 48) *
+          Math.cos(monthScale(i))}) rotate({monthScale(i) <= Math.PI / 2 ||
+        monthScale(i) >= (3 * Math.PI) / 2
+          ? radiansToDegrees(monthScale(i))
+          : radiansToDegrees(monthScale(i - 6))})"
+        text-anchor="middle"
+        dominant-baseline="middle"
+      >
+        {paintings.filter((p) => p.month === month && p.year === year).length}p,
+        {drawings.find((d) => d.month === month).drawings.length}d,
+        {letters.find((l) => l.month === month && l.year === year)
+          .number_of_letters}l
+      </text>
       <Paintings
         {paintings}
         {monthScale}
@@ -62,14 +95,22 @@
       />
     {/each}
   </g>
-  <text y={itemHeight + 5} text-anchor="middle">{year}</text>
+  <text y={itemHeight + 12} text-anchor="middle">{year}</text>
 </g>
 
 <style lang="scss">
   line {
     stroke: $text;
   }
-  .month-label {
+  .month-label,
+  .work-tooltip {
     font-size: 1.4rem;
+  }
+  .work-tooltip {
+    opacity: 0;
+    transition: opacity 200ms ease;
+    &.visible {
+      opacity: 1;
+    }
   }
 </style>

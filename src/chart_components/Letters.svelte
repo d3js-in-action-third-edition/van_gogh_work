@@ -1,5 +1,5 @@
 <script>
-  import letters from "../data/letters.json";
+  export let letters;
   export let monthScale;
   export let radialScale;
   export let months;
@@ -28,5 +28,6 @@
 <style lang="scss">
   line {
     stroke: $secondary;
+    pointer-events: none;
   }
 </style>
