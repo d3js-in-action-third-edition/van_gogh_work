@@ -10,6 +10,7 @@
   const padding = 30;
   const container = 1400;
   let windowWidth;
+  let windowHeight;
   $: svgWidth =
     windowWidth >= container
       ? container - 2 * padding
@@ -64,6 +65,7 @@
   $: tooltipMeta = {
     x: 0,
     y: 0,
+    screenY: 0,
     url: "",
     title: "",
     createdIn: "",
@@ -74,7 +76,7 @@
   };
 </script>
 
-<svelte:window bind:innerWidth={windowWidth} />
+<svelte:window bind:innerWidth={windowWidth} bind:innerHeight={windowHeight} />
 
 <div class="viz-container">
   {#if svgWidth}
@@ -107,6 +109,7 @@
     <Tooltip
       x={tooltipMeta.x}
       y={tooltipMeta.y}
+      screenY={tooltipMeta.screenY}
       url={tooltipMeta.url}
       title={tooltipMeta.title}
       createdIn={tooltipMeta.createdIn}
@@ -115,6 +118,8 @@
       currentLocation={tooltipMeta.currentLocation}
       dimensions={tooltipMeta.dimensions}
       subject={tooltipMeta.subject}
+      {svgWidth}
+      {windowHeight}
     />
   {/if}
 </div>

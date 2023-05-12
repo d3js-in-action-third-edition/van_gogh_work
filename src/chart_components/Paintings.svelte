@@ -61,6 +61,7 @@
     tooltipMeta = {
       x: e.offsetX,
       y: e.offsetY,
+      screenY: e.pageY,
       url: node.image,
       title: node.title,
       createdIn: node.created_in,

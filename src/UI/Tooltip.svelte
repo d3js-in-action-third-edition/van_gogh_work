@@ -12,11 +12,16 @@
   export let currentLocation;
   export let dimensions;
   export let subject;
+  export let svgWidth;
+  export let screenY;
+  export let windowHeight;
 </script>
 
 <div
   class="tooltip"
-  style="left: {x + 10}px; top: {y + 10}px;"
+  style="left: {x <= svgWidth / 2 ? `${x + 10}px` : 'auto'}; 
+         right: {x > svgWidth / 2 ? `${svgWidth - x + 10}px` : 'auto'}; 
+         top: {screenY < windowHeight - 300 ? `${y + 10}px` : `${y - 310}px`};"
   in:fly={{ y: 10, duration: 200, delay: 200 }}
   out:fade
 >
