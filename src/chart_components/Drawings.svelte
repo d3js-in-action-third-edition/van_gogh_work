@@ -15,6 +15,6 @@
 
 <style lang="scss">
   path {
-    fill: rgba($secondary, 0.2);
+    fill: rgba($secondary, 0.3);
   }
 </style>

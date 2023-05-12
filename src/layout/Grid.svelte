@@ -17,9 +17,10 @@
       : windowWidth - 2 * padding;
   $: numColumns = windowWidth > 900 ? 3 : windowWidth > 600 ? 2 : 1;
   $: numRows = Math.ceil(years.length / numColumns);
-  const itemHeight = 300;
+  const itemHeight = 400;
   $: itemWidth = svgWidth / numColumns;
-  $: svgHeight = numRows * itemHeight;
+  const verticalePadding = 50;
+  $: svgHeight = numRows * (itemHeight + verticalePadding);
 
   const months = [
     "January",
@@ -85,9 +86,10 @@
         <g
           transform="translate({(i % numColumns) * itemWidth}, {Math.floor(
             i / numColumns
-          ) * itemHeight})"
+          ) *
+            (itemHeight + verticalePadding)})"
         >
-          <rect x="0" y="0" width={itemWidth} height={itemHeight} />
+          <!-- <rect x="0" y="0" width={itemWidth} height={itemHeight} /> -->
           <GridItem
             {year}
             {itemWidth}
@@ -128,11 +130,11 @@
   .viz-container {
     position: relative;
   }
-  svg {
+  /* svg {
     border: 1px solid magenta;
-  }
-  rect {
+  } */
+  /* rect {
     fill: none;
     stroke: cyan;
-  }
+  } */
 </style>

@@ -16,7 +16,7 @@
   export let isTooltipVisible = false;
   export let tooltipMeta = {};
 
-  const padding = 15;
+  const padding = 30;
   $: radius = (itemHeight - 4 * padding) / 2;
 
   $: radialScale = scaleLinear()
@@ -25,8 +25,8 @@
 </script>
 
 <g transform="translate({itemWidth / 2}, 0)">
-  <g transform="translate(0, {padding + radius})">
-    <circle cx="0" cy="0" r={radius} fill="none" stroke="black" />
+  <g transform="translate(0, {2 * padding + radius})">
+    <!-- <circle cx="0" cy="0" r={radius} fill="none" stroke="black" /> -->
     <Drawings {drawings} {monthScale} {radialScale} />
     {#each months as month, i}
       <line
@@ -35,11 +35,13 @@
         y1="0"
         x2={radius * Math.sin(monthScale(i))}
         y2={-1 * radius * Math.cos(monthScale(i))}
+        stroke-opacity={0.2}
+        stroke-linecap="round"
       />
       <text
         class="month-label"
-        transform="translate({(radius + 9) * Math.sin(monthScale(i))}, {-1 *
-          (radius + 9) *
+        transform="translate({(radius + 30) * Math.sin(monthScale(i))}, {-1 *
+          (radius + 30) *
           Math.cos(monthScale(i))}) rotate({monthScale(i) <= Math.PI / 2 ||
         monthScale(i) >= (3 * Math.PI) / 2
           ? radiansToDegrees(monthScale(i))
@@ -57,7 +59,7 @@
       />
     {/each}
   </g>
-  <text y={itemHeight - 10} text-anchor="middle">{year}</text>
+  <text y={itemHeight + 5} text-anchor="middle">{year}</text>
 </g>
 
 <style lang="scss">
@@ -65,6 +67,6 @@
     stroke: $text;
   }
   .month-label {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 </style>
