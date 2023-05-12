@@ -19,7 +19,7 @@
   $: numRows = Math.ceil(years.length / numColumns);
   const itemHeight = 400;
   $: itemWidth = svgWidth / numColumns;
-  const verticalePadding = 50;
+  const verticalePadding = 100;
   $: svgHeight = numRows * (itemHeight + verticalePadding);
 
   const months = [

@@ -7,6 +7,7 @@
   export let monthScale;
   export let radius;
   export let maxPaintingArea;
+  export let itemWidth;
   export let isTooltipVisible = false;
   export let tooltipMeta = {};
 
@@ -26,14 +27,16 @@
       .force(
         "x",
         forceX((d) =>
-          d.monthIndex === 0 ? 0 : radius * Math.sin(monthScale(d.monthIndex))
+          d.monthIndex === 0
+            ? Math.random() * itemWidth - itemWidth / 2
+            : radius * Math.sin(monthScale(d.monthIndex))
         ).strength(0.5)
       )
       .force(
         "y",
         forceY((d) =>
           d.monthIndex === 0
-            ? 0
+            ? -1 * (radius + 80)
             : -1 * radius * Math.cos(monthScale(d.monthIndex))
         ).strength(0.5)
       )
@@ -61,7 +64,7 @@
     tooltipMeta = {
       x: e.offsetX,
       y: e.offsetY,
-      screenY: e.pageY,
+      screenY: e.clientY,
       url: node.image,
       title: node.title,
       createdIn: node.created_in,

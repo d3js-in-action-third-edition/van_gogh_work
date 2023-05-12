@@ -54,6 +54,7 @@
         {monthScale}
         {radius}
         {maxPaintingArea}
+        {itemWidth}
         bind:isTooltipVisible
         bind:tooltipMeta
       />
