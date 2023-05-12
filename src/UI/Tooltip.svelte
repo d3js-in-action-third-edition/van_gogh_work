@@ -26,7 +26,7 @@
   out:fade
 >
   <div class="image">
-    <a href={url} target="_blank" {title}><img src={url} {title} /></a>
+    <img src={url} {title} />
   </div>
   <div class="metadata">
     <div
@@ -51,19 +51,19 @@
     box-shadow: 0px 2px 6px 0px rgba($text, 0.2);
   }
   .image {
+    height: 300px;
     img {
       width: auto;
       height: 300px;
     }
   }
-  a {
-    display: block;
-    height: 300px;
-  }
   .metadata {
     position: relative;
     max-width: 600px;
     padding: 10px 30px 10px 25px;
+    div {
+      margin: 5px 0;
+    }
   }
   .title {
     font-family: $fontSecondary;
@@ -74,5 +74,6 @@
     left: 0;
     width: 15px;
     height: 100%;
+    margin: 0 !important;
   }
 </style>

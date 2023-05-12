@@ -27,7 +27,7 @@
 
 <g transform="translate({itemWidth / 2}, 0)">
   <g transform="translate(0, {2 * padding + radius})">
-    <!-- <circle cx="0" cy="0" r={radius} fill="none" stroke="black" /> -->
+    <circle cx="0" cy="0" r={radius} fill="none" stroke="none" />
     <Drawings {drawings} {monthScale} {radialScale} />
     <Letters {monthScale} {radialScale} {months} {year} />
     {#each months as month, i}

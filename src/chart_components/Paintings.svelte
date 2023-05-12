@@ -27,7 +27,7 @@
       .force(
         "x",
         forceX((d) =>
-          d.monthIndex === 0
+          d.monthIndex === null
             ? Math.random() * itemWidth - itemWidth / 2
             : radius * Math.sin(monthScale(d.monthIndex))
         ).strength(0.5)
@@ -35,7 +35,7 @@
       .force(
         "y",
         forceY((d) =>
-          d.monthIndex === 0
+          d.monthIndex === null
             ? -1 * (radius + 80)
             : -1 * radius * Math.cos(monthScale(d.monthIndex))
         ).strength(0.5)
