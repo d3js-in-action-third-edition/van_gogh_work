@@ -21,8 +21,8 @@
       : windowWidth - 2 * padding;
   $: numColumns = windowWidth > 900 ? 3 : windowWidth > 600 ? 2 : 1;
   $: numRows = Math.ceil(years.length / numColumns);
-  const itemHeight = 380;
   $: itemWidth = svgWidth / numColumns;
+  $: itemHeight = itemWidth;
   const verticalePadding = 40;
   $: svgHeight = numRows * (itemHeight + verticalePadding);
 

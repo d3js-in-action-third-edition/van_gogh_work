@@ -161,4 +161,7 @@
   .year-label {
     transition: opacity 100ms ease;
   }
+  text {
+    pointer-events: none;
+  }
 </style>
