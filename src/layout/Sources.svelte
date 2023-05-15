@@ -29,3 +29,12 @@
     <a href="https://www.wikiart.org">Wikiart</a>
   </li>
 </ul>
+
+<style>
+  ul {
+    padding-left: 5px;
+  }
+  li {
+    margin: 5px 0;
+  }
+</style>

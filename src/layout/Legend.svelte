@@ -62,12 +62,14 @@
     <h3>Length of the purple bars and areas</h3>
     <div class="length-legend">
       <ul>
-        {#each lengths as length}
-          <li>
-            <span class="bar" style="width: {radialScale(length)}px" />
-            <span class="label">{length}</span>
-          </li>
-        {/each}
+        {#if radialScale}
+          {#each lengths as length}
+            <li>
+              <span class="bar" style="width: {radialScale(length)}px" />
+              <span class="label">{length}</span>
+            </li>
+          {/each}
+        {/if}
       </ul>
     </div>
   </div>

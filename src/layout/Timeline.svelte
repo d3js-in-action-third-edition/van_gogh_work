@@ -2,7 +2,6 @@
   import { scaleTime } from "d3-scale";
   import { timeFormat } from "d3-time-format";
   import timeline from "../data/timeline.json";
-  console.log(timeline);
 
   let height;
 
