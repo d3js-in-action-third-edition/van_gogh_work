@@ -66,6 +66,7 @@
     }
   }
   .title {
+    margin-bottom: 1.2rem;
     font-family: $fontSecondary;
   }
   .subject {

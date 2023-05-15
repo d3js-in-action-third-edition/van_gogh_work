@@ -53,9 +53,8 @@
           )
           .strength(1)
       )
-      .alpha(1); // [0, 1] The rate at which the simulation finishes. You should increase this if you want a faster simulation, or decrease it if you want more "movement" in the simulation.
-    // .alphaDecay(0.0005); // [0, 1] The rate at which the simulation alpha approaches 0. you should decrease this if your bubbles are not completing their transitions between simulation states.
-    // .restart();
+      .alpha(0.5)
+      .alphaDecay(0.5);
   }
 
   const colorScale = scaleOrdinal()
