@@ -1,11 +1,13 @@
 {
-  "name": "eu_street_names",
+  "name": "van_gogh_work",
   "private": true,
   "version": "0.0.0",
+  "homepage": "d3js-in-action-third-edition.github.io/van_gogh_work/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "deploy": "npx gh-pages -d dist",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -20,6 +22,7 @@
     "d3-scale": "^4.0.2",
     "d3-shape": "^3.2.0",
     "d3-time-format": "^4.1.0",
+    "gh-pages": "^5.0.0",
     "node-sass": "^8.0.0",
     "svelte-preprocess": "^5.0.3"
   }
