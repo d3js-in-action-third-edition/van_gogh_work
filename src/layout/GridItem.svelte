@@ -5,6 +5,8 @@
   import { radiansToDegrees } from "../utils/helpers";
   import { scaleLinear } from "d3-scale";
   import letters from "../data/letters.json";
+  import { isYearIncluded } from "../utils/helpers";
+  import { isMonthIncluded } from "../utils/helpers";
 
   export let year;
   export let itemWidth;
@@ -17,6 +19,8 @@
   export let maxPaintingArea;
   export let isTooltipVisible = false;
   export let tooltipMeta = {};
+  export let isPeriodSelected;
+  export let selectedPeriod;
 
   const padding = 30;
   $: radius = (itemWidth - 4 * padding) / 2;
@@ -49,6 +53,12 @@
     {#each months as month, i}
       <line
         class="line-{month}-{i}"
+        class:lessen={isPeriodSelected &&
+          !isMonthIncluded(
+            selectedPeriod,
+            months.findIndex((m) => m === month),
+            year
+          )}
         x1="0"
         y1="0"
         x2={radius * Math.sin(monthScale(i))}
@@ -58,6 +68,12 @@
       />
       <text
         class="month-label"
+        class:lessen={isPeriodSelected &&
+          !isMonthIncluded(
+            selectedPeriod,
+            months.findIndex((m) => m === month),
+            year
+          )}
         transform="translate({(radius + 30) * Math.sin(monthScale(i))}, {-1 *
           (radius + 30) *
           Math.cos(monthScale(i))}) rotate({monthScale(i) <= Math.PI / 2 ||
@@ -95,12 +111,21 @@
       />
     {/each}
   </g>
-  <text y={itemHeight} text-anchor="middle">{year}</text>
+  <text
+    class="year-label"
+    y={itemHeight}
+    text-anchor="middle"
+    class:lessen={isPeriodSelected && !isYearIncluded(selectedPeriod, year)}
+    >{year}</text
+  >
 </g>
 
 <style lang="scss">
   line {
     stroke: $text;
+    &.lessen {
+      opacity: 0;
+    }
   }
   .month-label,
   .work-tooltip {
@@ -112,5 +137,10 @@
     &.visible {
       opacity: 1;
     }
+  }
+  line,
+  .month-label,
+  .year-label {
+    transition: opacity 100ms ease;
   }
 </style>

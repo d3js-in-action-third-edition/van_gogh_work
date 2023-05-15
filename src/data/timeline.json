@@ -1,5 +1,6 @@
 [
  {
+   "id": 1,
    "start_month": 5,
    "start_year": 1881,
    "end_month": 11,
@@ -8,6 +9,7 @@
    "country": "Netherlands"
  },
  {
+   "id": 2,
    "start_month": 12,
    "start_year": 1883,
    "end_month": 2,
@@ -16,6 +18,7 @@
    "country": "Netherlands"
  },
  {
+   "id": 3,
    "start_month": 3,
    "start_year": 1886,
    "end_month": 1,
@@ -24,6 +27,7 @@
    "country": "France"
  },
  {
+   "id": 4,
    "start_month": 2,
    "start_year": 1888,
    "end_month": 4,
@@ -32,6 +36,7 @@
    "country": "France"
  },
  {
+   "id": 5,
    "start_month": 5,
    "start_year": 1889,
    "end_month": 5,
@@ -40,6 +45,7 @@
    "country": "France"
  },
  {
+   "id": 6,
    "start_month": 6,
    "start_year": 1890,
    "end_month": 7,

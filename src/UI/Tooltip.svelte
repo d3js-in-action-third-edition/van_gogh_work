@@ -60,7 +60,7 @@
   .metadata {
     position: relative;
     max-width: 600px;
-    padding: 10px 30px 10px 25px;
+    padding: 20px 30px 10px 25px;
     div {
       margin: 5px 0;
     }

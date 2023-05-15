@@ -75,6 +75,9 @@
     currentLocation: "",
     dimensions: "",
   };
+
+  export let isPeriodSelected;
+  export let selectedPeriod;
 </script>
 
 <svelte:window bind:innerWidth={windowWidth} bind:innerHeight={windowHeight} />
@@ -102,6 +105,8 @@
             {maxPaintingArea}
             bind:isTooltipVisible
             bind:tooltipMeta
+            {isPeriodSelected}
+            {selectedPeriod}
           />
         </g>
       {/each}

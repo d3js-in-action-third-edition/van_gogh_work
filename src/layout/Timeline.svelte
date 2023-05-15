@@ -14,21 +14,33 @@
   const endDate = new Date(
     timeline[timeline.length - 1].end_year,
     timeline[timeline.length - 1].end_month - 1,
-    1
+    0
   );
   $: timeScale = scaleTime().domain([startDate, endDate]).range([0, height]);
-  $: console.log(height);
+
+  export let isPeriodSelected = false;
+  export let selectedPeriod;
+  const handlePeriodSelection = (period) => {
+    if (selectedPeriod !== period.id) {
+      isPeriodSelected = true;
+      selectedPeriod = period.id;
+    } else {
+      isPeriodSelected = false;
+    }
+  };
 </script>
 
 <div class="timeline-container" bind:clientHeight={height}>
   {#each timeline as period}
     <div
       class="period-container"
+      class:lessen={isPeriodSelected && selectedPeriod !== period.id}
       style="top: {timeScale(
         new Date(period.start_year, period.start_month - 1, 1)
       )}px; height: {timeScale(
         new Date(period.end_year, period.end_month - 1, 25)
       ) - timeScale(new Date(period.start_year, period.start_month - 1, 0))}px;"
+      on:click={() => handlePeriodSelection(period)}
     >
       <div class="dates-container">
         <div class="start-date">
@@ -55,6 +67,7 @@
   .timeline-container {
     height: 100%;
     font-size: 1.6rem;
+    line-height: 1.2;
     color: $secondary;
   }
   .period-container {
@@ -63,6 +76,8 @@
     position: absolute;
     left: 0;
     padding: 3px 0;
+    cursor: pointer;
+    transition: opacity 100ms ease;
   }
   .period {
     width: 10px;
