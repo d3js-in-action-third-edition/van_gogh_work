@@ -25,9 +25,7 @@
   in:fly={{ y: 10, duration: 200, delay: 200 }}
   out:fade
 >
-  <div class="image">
-    <img src={url} {title} />
-  </div>
+  <div class="image" style="background-image: url({url});" />
   <div class="metadata">
     <div
       class="subject"
@@ -46,21 +44,24 @@
   .tooltip {
     display: flex;
     position: absolute;
+    height: 300px;
     background-color: $white;
     border-radius: $radius;
     box-shadow: 0px 2px 6px 0px rgba($text, 0.2);
   }
   .image {
-    height: 300px;
-    img {
-      width: auto;
-      height: 300px;
-    }
+    flex-shrink: 0;
+    height: 100%;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   .metadata {
     position: relative;
     max-width: 600px;
     padding: 20px 30px 10px 25px;
+    overflow: hidden;
     div {
       margin: 5px 0;
     }
