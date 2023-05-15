@@ -79,7 +79,7 @@
     };
   };
   const handleMouseLeave = () => {
-    // isTooltipVisible = false;
+    isTooltipVisible = false;
   };
 </script>
 

@@ -48,6 +48,16 @@
     background-color: $white;
     border-radius: $radius;
     box-shadow: 0px 2px 6px 0px rgba($text, 0.2);
+    @media (max-width: $md) {
+      position: fixed;
+      flex-direction: column;
+      top: auto !important;
+      left: 0 !important;
+      right: 0 !important;
+      bottom: 0;
+      width: calc(100% + $gutter);
+      height: 400px;
+    }
   }
   .image {
     flex-shrink: 0;
@@ -56,6 +66,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    @media (max-width: $md) {
+      width: 100%;
+      height: 200px;
+    }
   }
   .metadata {
     position: relative;
@@ -64,6 +78,9 @@
     overflow: hidden;
     div {
       margin: 5px 0;
+    }
+    @media (max-width: $md) {
+      height: 200px;
     }
   }
   .title {
