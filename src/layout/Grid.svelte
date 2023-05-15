@@ -6,6 +6,8 @@
   import drawings from "../data/drawings.json";
   import paintings from "../data/paintings_subject-link.json";
 
+  export let radialScale;
+
   const years = range(1881, 1891);
   const padding = 30;
   const container = (10 * 1400) / 12;
@@ -105,6 +107,7 @@
             {maxPaintingArea}
             bind:isTooltipVisible
             bind:tooltipMeta
+            bind:radialScale
             {isPeriodSelected}
             {selectedPeriod}
           />

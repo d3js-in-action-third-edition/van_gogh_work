@@ -1,5 +1,6 @@
 <script>
   import Header from "./layout/Header.svelte";
+  import Legend from "./layout/Legend.svelte";
   import Grid from "./layout/Grid.svelte";
   import Timeline from "./layout/Timeline.svelte";
   import Notes from "./layout/Notes.svelte";
@@ -7,11 +8,15 @@
 
   let isPeriodSelected;
   let selectedPeriod;
+  let radialScale;
 </script>
 
 <Header />
 <main>
   <div class="container">
+    <section>
+      <Legend {radialScale} />
+    </section>
     <section>
       <div class="row">
         <div class="col-2">
@@ -34,7 +39,7 @@
           <Timeline bind:isPeriodSelected bind:selectedPeriod />
         </div>
         <div class="col-10">
-          <Grid {isPeriodSelected} {selectedPeriod} />
+          <Grid {isPeriodSelected} {selectedPeriod} bind:radialScale />
         </div>
       </div>
     </section>

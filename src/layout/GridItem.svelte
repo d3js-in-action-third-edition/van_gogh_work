@@ -21,6 +21,7 @@
   export let tooltipMeta = {};
   export let isPeriodSelected;
   export let selectedPeriod;
+  export let radialScale;
 
   const padding = 30;
   $: radius = (itemWidth - 4 * padding) / 2;
@@ -47,23 +48,6 @@
       fill="transparent"
       on:mouseenter={() => handleMouseEnter()}
       on:mouseleave={() => handleMouseLeave()}
-    />
-    <Drawings
-      {drawings}
-      {monthScale}
-      {radialScale}
-      {year}
-      {isPeriodSelected}
-      {selectedPeriod}
-    />
-    <Letters
-      {letters}
-      {monthScale}
-      {radialScale}
-      {months}
-      {year}
-      {isPeriodSelected}
-      {selectedPeriod}
     />
     {#each months as month, i}
       <line
@@ -127,6 +111,23 @@
         {selectedPeriod}
       />
     {/each}
+    <Drawings
+      {drawings}
+      {monthScale}
+      {radialScale}
+      {year}
+      {isPeriodSelected}
+      {selectedPeriod}
+    />
+    <Letters
+      {letters}
+      {monthScale}
+      {radialScale}
+      {months}
+      {year}
+      {isPeriodSelected}
+      {selectedPeriod}
+    />
   </g>
   <text
     class="year-label"

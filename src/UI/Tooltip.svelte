@@ -21,7 +21,7 @@
   class="tooltip"
   style="left: {x <= svgWidth / 2 ? `${x + 10}px` : 'auto'}; 
          right: {x > svgWidth / 2 ? `${svgWidth - x + 10}px` : 'auto'}; 
-         top: {screenY < windowHeight - 300 ? `${y + 10}px` : `${y - 310}px`};"
+         top: {screenY < windowHeight - 330 ? `${y + 10}px` : `${y - 310}px`};"
   in:fly={{ y: 10, duration: 200, delay: 200 }}
   out:fade
 >

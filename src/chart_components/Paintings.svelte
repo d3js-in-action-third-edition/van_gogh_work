@@ -110,7 +110,7 @@
       stroke: $text;
     }
     &.print {
-      stroke: #4bbfa7;
+      stroke: $secondaryPale;
     }
     &.lessen {
       fill-opacity: 0.1;
