@@ -12,14 +12,6 @@ $xlGrid: $xl - 1 + $gap;
   width: 100%;
   max-width: $container;
 }
-.container-fluid {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $gutter;
-  padding-left: $gutter;
-  width: 100%;
-}
 .row {
   display: flex;
   flex-wrap: wrap;
