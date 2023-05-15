@@ -10,11 +10,12 @@ export const radiansToDegrees = (radians) => {
 
 export const isMonthIncluded = (selectedPeriod, month, year) => {
   const relatedPeriod = timeline.find(period => period.id === selectedPeriod);
-  const startDate = new Date(relatedPeriod.start_year, relatedPeriod.start_month - 1, 1);
-  const endDate = new Date(relatedPeriod.end_year, relatedPeriod.end_month - 1, 0);
+  const startDate = new Date(relatedPeriod.start_year, relatedPeriod.start_month, 1);
+  const endDate = new Date(relatedPeriod.end_year, relatedPeriod.end_month, 0);
 
-  const currentDate = new Date(year, month, 1);
-  const isMonthIncluded = currentDate >= startDate && currentDate <= endDate ? true : false;
+  const currentDateStart = new Date(year, month, 1);
+  const currentDateEnd = new Date(year, month, 0);
+  const isMonthIncluded = currentDateStart >= startDate && currentDateEnd <= endDate ? true : false;
 
   return isMonthIncluded;
 }

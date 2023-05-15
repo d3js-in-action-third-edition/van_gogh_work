@@ -48,8 +48,23 @@
       on:mouseenter={() => handleMouseEnter()}
       on:mouseleave={() => handleMouseLeave()}
     />
-    <Drawings {drawings} {monthScale} {radialScale} />
-    <Letters {letters} {monthScale} {radialScale} {months} {year} />
+    <Drawings
+      {drawings}
+      {monthScale}
+      {radialScale}
+      {year}
+      {isPeriodSelected}
+      {selectedPeriod}
+    />
+    <Letters
+      {letters}
+      {monthScale}
+      {radialScale}
+      {months}
+      {year}
+      {isPeriodSelected}
+      {selectedPeriod}
+    />
     {#each months as month, i}
       <line
         class="line-{month}-{i}"
@@ -108,6 +123,8 @@
         {itemWidth}
         bind:isTooltipVisible
         bind:tooltipMeta
+        {isPeriodSelected}
+        {selectedPeriod}
       />
     {/each}
   </g>

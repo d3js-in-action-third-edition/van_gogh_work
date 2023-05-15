@@ -2,6 +2,7 @@
   import { forceSimulation, forceX, forceY, forceCollide } from "d3-force";
   import { scaleRadial, scaleOrdinal } from "d3-scale";
   import { subjects } from "../utils/subjects";
+  import { isMonthIncluded } from "../utils/helpers";
 
   export let paintings;
   export let monthScale;
@@ -10,6 +11,8 @@
   export let itemWidth;
   export let isTooltipVisible = false;
   export let tooltipMeta = {};
+  export let isPeriodSelected;
+  export let selectedPeriod;
 
   const circleRadiusScale = scaleRadial()
     .domain([0, Math.sqrt(maxPaintingArea)])
@@ -85,6 +88,8 @@
   <circle
     class:watercolor={node.medium === "watercolor"}
     class:print={node.medium === "print"}
+    class:lessen={isPeriodSelected &&
+      !isMonthIncluded(selectedPeriod, node.monthIndex, node.year)}
     cx={node.x}
     cy={node.y}
     r={node.width_cm === null
@@ -101,11 +106,16 @@
   circle {
     cursor: pointer;
     stroke: $white;
+    transition: opacity 100ms ease;
     &.watercolor {
       stroke: $text;
     }
     &.print {
       stroke: #4bbfa7;
+    }
+    &.lessen {
+      fill-opacity: 0.1;
+      stroke-opacity: 0.1;
     }
   }
 </style>

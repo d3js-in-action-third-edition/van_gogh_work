@@ -8,12 +8,12 @@
 
   const startDate = new Date(
     timeline[0].start_year,
-    timeline[0].start_month - 1,
+    timeline[0].start_month,
     1
   );
   const endDate = new Date(
     timeline[timeline.length - 1].end_year,
-    timeline[timeline.length - 1].end_month - 1,
+    timeline[timeline.length - 1].end_month,
     0
   );
   $: timeScale = scaleTime().domain([startDate, endDate]).range([0, height]);
@@ -36,22 +36,20 @@
       class="period-container"
       class:lessen={isPeriodSelected && selectedPeriod !== period.id}
       style="top: {timeScale(
-        new Date(period.start_year, period.start_month - 1, 1)
+        new Date(period.start_year, period.start_month, 1)
       )}px; height: {timeScale(
-        new Date(period.end_year, period.end_month - 1, 25)
-      ) - timeScale(new Date(period.start_year, period.start_month - 1, 0))}px;"
+        new Date(period.end_year, period.end_month, 25)
+      ) - timeScale(new Date(period.start_year, period.start_month, 0))}px;"
       on:click={() => handlePeriodSelection(period)}
     >
       <div class="dates-container">
         <div class="start-date">
           {timeFormat("%b %Y")(
-            new Date(period.start_year, period.start_month - 1, 1)
+            new Date(period.start_year, period.start_month, 1)
           )}
         </div>
         <div class="end-date">
-          {timeFormat("%b %Y")(
-            new Date(period.end_year, period.end_month - 1, 1)
-          )}
+          {timeFormat("%b %Y")(new Date(period.end_year, period.end_month, 1))}
         </div>
       </div>
       <div class="period" />
