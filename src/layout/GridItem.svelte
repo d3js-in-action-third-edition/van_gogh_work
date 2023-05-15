@@ -19,7 +19,7 @@
   export let tooltipMeta = {};
 
   const padding = 30;
-  $: radius = (itemHeight - 4 * padding) / 2;
+  $: radius = (itemWidth - 4 * padding) / 2;
 
   $: radialScale = scaleLinear()
     .domain([0, maxDrawings])
@@ -95,7 +95,7 @@
       />
     {/each}
   </g>
-  <text y={itemHeight + 12} text-anchor="middle">{year}</text>
+  <text y={itemHeight} text-anchor="middle">{year}</text>
 </g>
 
 <style lang="scss">

@@ -36,7 +36,7 @@
         "y",
         forceY((d) =>
           d.monthIndex === null
-            ? -1 * (radius + 80)
+            ? radius + 90
             : -1 * radius * Math.cos(monthScale(d.monthIndex))
         ).strength(0.5)
       )

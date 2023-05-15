@@ -1672,7 +1672,7 @@
     "medium": "oil",
     "monthIndex": 2,
     "width_cm": 41,
-    "height_cm": 3,
+    "height_cm": 32,
     "subject": "portrait",
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/57/Van_Gogh_-_Kopf_einer_B%C3%A4uerin_mit_wei%C3%9Fer_Haube15.jpeg"
   },
@@ -8590,7 +8590,7 @@
     "width_cm": 73,
     "height_cm": 92,
     "subject": "landscape",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/970px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
   },
   {
     "title": "Olive Trees with the Alpilles in the Background",

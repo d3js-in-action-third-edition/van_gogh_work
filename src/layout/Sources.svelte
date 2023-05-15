@@ -1,6 +1,11 @@
 <h2>Sources</h2>
 <ul>
   <li>
+    <a href="https://en.wikipedia.org/wiki/Vincent_van_Gogh"
+      >The life of Vincent van Gogh</a
+    >
+  </li>
+  <li>
     <a href="https://en.wikipedia.org/wiki/List_of_works_by_Vincent_van_Gogh"
       >List of works by Vincent van Gogh</a
     >

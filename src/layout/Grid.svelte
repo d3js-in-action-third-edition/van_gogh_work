@@ -8,7 +8,7 @@
 
   const years = range(1881, 1891);
   const padding = 30;
-  const container = 1400;
+  const container = (10 * 1400) / 12;
   let windowWidth;
   let windowHeight;
   $: svgWidth =
@@ -17,9 +17,9 @@
       : windowWidth - 2 * padding;
   $: numColumns = windowWidth > 900 ? 3 : windowWidth > 600 ? 2 : 1;
   $: numRows = Math.ceil(years.length / numColumns);
-  const itemHeight = 400;
+  const itemHeight = 380;
   $: itemWidth = svgWidth / numColumns;
-  const verticalePadding = 100;
+  const verticalePadding = 40;
   $: svgHeight = numRows * (itemHeight + verticalePadding);
 
   const months = [

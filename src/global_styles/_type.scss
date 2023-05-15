@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap');
 
 $fontPrimary: 'Source Sans Pro', sans-serif;
 $fontSecondary: 'Libre Baskerville', serif;
@@ -15,7 +15,7 @@ h1 {
   font-size: 6rem;
 }
 h2 {
-  margin: 1rem 0;
+  margin: 5rem 0 1rem;
   font-size: 3.6rem;
 }
 h3 {
