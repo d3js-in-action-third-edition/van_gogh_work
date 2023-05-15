@@ -16,6 +16,8 @@
   $: svgWidth =
     windowWidth >= container
       ? container - 2 * padding
+      : windowWidth >= 768
+      ? (10 * (windowWidth - 2 * padding)) / 12
       : windowWidth - 2 * padding;
   $: numColumns = windowWidth > 900 ? 3 : windowWidth > 600 ? 2 : 1;
   $: numRows = Math.ceil(years.length / numColumns);

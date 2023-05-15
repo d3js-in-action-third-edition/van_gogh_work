@@ -82,6 +82,9 @@
   li {
     margin: 3px 0;
   }
+  img {
+    max-width: 500px;
+  }
   span {
     display: inline-block;
   }

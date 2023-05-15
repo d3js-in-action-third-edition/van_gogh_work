@@ -19,13 +19,13 @@
     </section>
     <section>
       <div class="row">
-        <div class="col-2">
+        <div class="col-0 col-md-2">
           <h3>Timeline</h3>
           <div class="instruction">
             Click on a period to highlight the related work.
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-0 col-md-6">
           <h3>Visualizations</h3>
           <div class="instruction">
             Pass your mouse over a visualization to see the number of paintings,
@@ -35,10 +35,10 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-2">
+        <div class="col-0 col-md-2">
           <Timeline bind:isPeriodSelected bind:selectedPeriod />
         </div>
-        <div class="col-10">
+        <div class="col-12 col-md-10">
           <Grid {isPeriodSelected} {selectedPeriod} bind:radialScale />
         </div>
       </div>

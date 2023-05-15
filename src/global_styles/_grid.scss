@@ -38,6 +38,11 @@ $xlGrid: $xl - 1 + $gap;
   flex-grow: 1;
   max-width: 100%;
 }
+@media (max-width: $mdGrid) {
+  .col-0 {
+    display: none;
+  }
+}
 
 //GRID
 @for $i from 1 through 12 {
