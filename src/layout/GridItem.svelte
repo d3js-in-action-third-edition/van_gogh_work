@@ -131,7 +131,7 @@
   </g>
   <text
     class="year-label"
-    y={itemHeight}
+    y={itemHeight + 10}
     text-anchor="middle"
     class:lessen={isPeriodSelected && !isYearIncluded(selectedPeriod, year)}
     >{year}</text
