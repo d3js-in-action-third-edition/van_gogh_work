@@ -91,7 +91,8 @@
     date: "",
     medium: "",
     currentLocation: "",
-    dimensions: "",
+    width: 0,
+    height: 0,
   };
 
   export let isPeriodSelected;
@@ -142,7 +143,8 @@
       date={tooltipMeta.date}
       medium={tooltipMeta.medium}
       currentLocation={tooltipMeta.currentLocation}
-      dimensions={tooltipMeta.dimensions}
+      width={tooltipMeta.width}
+      height={tooltipMeta.height}
       subject={tooltipMeta.subject}
       {svgWidth}
       {windowHeight}

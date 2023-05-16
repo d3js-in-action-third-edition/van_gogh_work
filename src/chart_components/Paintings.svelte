@@ -72,8 +72,8 @@
       date: node.month !== "" ? `${node.month} ${node.year}` : node.year,
       medium: node.medium,
       currentLocation: node.current_location,
-      dimensions:
-        node.width_cm !== null ? `${node.width_cm} x ${node.height_cm} cm` : "",
+      width: node.width_cm,
+      height: node.height_cm,
       subject: node.subject,
     };
   };

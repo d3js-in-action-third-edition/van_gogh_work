@@ -10,7 +10,8 @@
   export let date;
   export let medium;
   export let currentLocation;
-  export let dimensions;
+  export let width;
+  export let height;
   export let subject;
   export let svgWidth;
   export let screenY;
@@ -25,18 +26,23 @@
   in:fly={{ y: 10, duration: 200, delay: 200 }}
   out:fade
 >
-  <div class="image" style="background-image: url({url});" />
+  <div
+    class="image"
+    style="background-image: url({url}); width: {(300 * width) / height}px;"
+  />
   <div class="metadata">
     <div
       class="subject"
       style="background-color: {subjects.find((s) => s.subject === subject)
-        .color}"
+        .color};"
     />
     <h3 class="title">{title}</h3>
     <div class="date">{createdIn}, {date}</div>
     <div class="medium">medium: {medium}</div>
     <div class="current-location">{currentLocation}</div>
-    <div class="dimensions">{dimensions}</div>
+    <div class="dimensions">
+      {width !== null ? `${width} x ${height} cm` : ""}
+    </div>
   </div>
 </div>
 
@@ -62,9 +68,8 @@
   .image {
     flex-shrink: 0;
     height: 100%;
-    width: 400px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto 100%;
     background-position: center;
     @media (max-width: $md) {
       width: 100%;
