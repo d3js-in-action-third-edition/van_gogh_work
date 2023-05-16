@@ -28,7 +28,9 @@
 >
   <div
     class="image"
-    style="background-image: url({url}); width: {(300 * width) / height}px;"
+    style="background-image: url({url}); width: {width === null
+      ? 300
+      : (300 * width) / height}px;"
   />
   <div class="metadata">
     <div
