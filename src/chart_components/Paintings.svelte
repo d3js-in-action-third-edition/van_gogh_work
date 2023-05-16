@@ -2,7 +2,6 @@
   import { forceSimulation, forceX, forceY, forceCollide } from "d3-force";
   import { scaleRadial, scaleOrdinal } from "d3-scale";
   import { subjects } from "../utils/subjects";
-  import { isMonthIncluded } from "../utils/helpers";
 
   export let paintings;
   export let monthScale;
@@ -87,8 +86,7 @@
   <circle
     class:watercolor={node.medium === "watercolor"}
     class:print={node.medium === "print"}
-    class:lessen={isPeriodSelected &&
-      !isMonthIncluded(selectedPeriod, node.monthIndex, node.year)}
+    class:lessen={isPeriodSelected && node.period !== selectedPeriod}
     cx={node.x}
     cy={node.y}
     r={node.width_cm === null

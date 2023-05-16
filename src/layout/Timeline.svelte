@@ -20,7 +20,7 @@
   export let isPeriodSelected = false;
   export let selectedPeriod;
   const handlePeriodSelection = (period) => {
-    if (selectedPeriod !== period.id) {
+    if (!isPeriodSelected || selectedPeriod !== period.id) {
       isPeriodSelected = true;
       selectedPeriod = period.id;
     } else {

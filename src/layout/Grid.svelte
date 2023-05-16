@@ -6,6 +6,20 @@
   import drawings from "../data/drawings.json";
   import paintings from "../data/paintings_subject-link.json";
 
+  import timeline from "../data/timeline.json";
+  timeline.forEach((t) => {
+    t["startDate"] = new Date(t.start_year, t.start_month, 1);
+    t["endDate"] = new Date(t.end_year, t.end_month, 0);
+  });
+  paintings.forEach((p) => {
+    const date = new Date(p.year, p.monthIndex, 0);
+    timeline.forEach((t) => {
+      if (date >= t.startDate && date <= t.endDate) {
+        p["period"] = t.id;
+      }
+    });
+  });
+
   export let radialScale;
 
   const years = range(1881, 1891);
