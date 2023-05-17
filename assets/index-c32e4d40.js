@@ -80,7 +80,8 @@ Unknown (x2)`,medium:"print",monthIndex:3,width_cm:93,height_cm:72,subject:"inte
   <li class="svelte-1a8uu8w"><a href="https://vangoghletters.org/vg/letters.html">Vincent van Gogh - The Letters</a></li> 
   <li class="svelte-1a8uu8w"><a href="https://en.wikipedia.org/wiki/The_Letters_of_Vincent_van_Gogh">The Letters of Vincent van Gogh</a></li> 
   <li class="svelte-1a8uu8w"><a href="https://www.wikiart.org">Wikiart</a></li>`,y(n,"class","svelte-1a8uu8w")},m(a,o){K(a,t,o),K(a,i,o),K(a,n,o)},p:Y,i:Y,o:Y,d(a){a&&R(t),a&&R(i),a&&R(n)}}}class Ql extends ge{constructor(t){super(),he(this,t,null,ql,se,{})}}function Xl(e){let t,i,n,a,o,r,m,c,l,u,_,d,h,g,p,w,b,s,G,P,k,f,x,B,F;t=new ao({}),r=new mo({props:{radialScale:e[2]}});function W(I){e[3](I)}function M(I){e[4](I)}let v={};e[0]!==void 0&&(v.isPeriodSelected=e[0]),e[1]!==void 0&&(v.selectedPeriod=e[1]),h=new Yl({props:v}),be.push(()=>xe(h,"isPeriodSelected",W)),be.push(()=>xe(h,"selectedPeriod",M));function A(I){e[5](I)}let S={isPeriodSelected:e[0],selectedPeriod:e[1]};return e[2]!==void 0&&(S.radialScale=e[2]),s=new Kl({props:S}),be.push(()=>xe(s,"radialScale",A)),f=new Zl({}),B=new Ql({}),{c(){we(t.$$.fragment),i=L(),n=T("main"),a=T("div"),o=T("section"),we(r.$$.fragment),m=L(),c=T("section"),l=T("div"),l.innerHTML=`<div class="col-0 col-md-2"><h3>Timeline</h3> 
-          <div class="instruction svelte-1py9reh">Click on a period to highlight the related work.</div></div> 
+          <div class="instruction svelte-1py9reh">Click on a period to highlight the related work. Click again to
+            unselect it.</div></div> 
         <div class="col-0 col-md-6"><h3>Visualizations</h3> 
           <div class="instruction svelte-1py9reh">Pass your mouse over a visualization to see the number of paintings
             (p), drawings (d), and letters (l) for each month. Position your
