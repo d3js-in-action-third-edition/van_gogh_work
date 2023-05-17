@@ -22,7 +22,8 @@
         <div class="col-0 col-md-2">
           <h3>Timeline</h3>
           <div class="instruction">
-            Click on a period to highlight the related work.
+            Click on a period to highlight the related work. Click again to
+            unselect it.
           </div>
         </div>
         <div class="col-0 col-md-6">
