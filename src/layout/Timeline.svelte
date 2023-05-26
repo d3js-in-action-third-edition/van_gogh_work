@@ -3,6 +3,9 @@
   import { timeFormat } from "d3-time-format";
   import timeline from "../data/timeline.json";
 
+  export let isPeriodSelected = false;
+  export let selectedPeriod;
+
   let height;
 
   const startDate = new Date(
@@ -17,8 +20,6 @@
   );
   $: timeScale = scaleTime().domain([startDate, endDate]).range([0, height]);
 
-  export let isPeriodSelected = false;
-  export let selectedPeriod;
   const handlePeriodSelection = (period) => {
     if (!isPeriodSelected || selectedPeriod !== period.id) {
       isPeriodSelected = true;

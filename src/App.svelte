@@ -6,9 +6,9 @@
   import Notes from "./layout/Notes.svelte";
   import Sources from "./layout/Sources.svelte";
 
+  let radialScale;
   let isPeriodSelected;
   let selectedPeriod;
-  let radialScale;
 </script>
 
 <Header />
@@ -40,7 +40,7 @@
           <Timeline bind:isPeriodSelected bind:selectedPeriod />
         </div>
         <div class="col-12 col-md-10">
-          <Grid {isPeriodSelected} {selectedPeriod} bind:radialScale />
+          <Grid {isPeriodSelected} {selectedPeriod} />
         </div>
       </div>
     </section>

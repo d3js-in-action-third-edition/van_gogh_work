@@ -1,63 +1,64 @@
 <script>
+  import GridItem from "./GridItem.svelte";
   import { range, max } from "d3-array";
   import { scaleLinear } from "d3-scale";
-
-  import GridItem from "./GridItem.svelte";
+  import paintings from "../data/paintings.json";
   import drawings from "../data/drawings.json";
-  import paintings from "../data/paintings_subject-link.json";
+  import { months } from "../utils/months";
+  import letters from "../data/letters.json";
+  import Tooltip from "../UI/Tooltip.svelte";
 
-  import timeline from "../data/timeline.json";
-  timeline.forEach((t) => {
-    t["startDate"] = new Date(t.start_year, t.start_month, 1);
-    t["endDate"] = new Date(t.end_year, t.end_month, 0);
-  });
-  paintings.forEach((p) => {
-    const date = new Date(p.year, p.monthIndex, 0);
-    timeline.forEach((t) => {
-      if (date >= t.startDate && date <= t.endDate) {
-        p["period"] = t.id;
-      }
-    });
-  });
+  export let isPeriodSelected;
+  export let selectedPeriod;
 
-  export let radialScale;
+  let windowWidth;
+  const gridContainer = 1400;
+  const padding = 30;
+  let svgWidth;
+  $: switch (true) {
+    case windowWidth >= gridContainer:
+      svgWidth = (10 / 12) * (gridContainer - 2 * padding);
+      break;
+    case windowWidth < gridContainer && windowWidth >= 768:
+      svgWidth = (10 / 12) * (windowWidth - 2 * padding);
+      break;
+    default:
+      svgWidth = windowWidth - 2 * padding;
+  }
 
   const years = range(1881, 1891);
-  const padding = 30;
-  const container = (10 * 1400) / 12;
-  let windowWidth;
-  let windowHeight;
-  $: svgWidth =
-    windowWidth >= container
-      ? container - 2 * padding
-      : windowWidth >= 768
-      ? (10 * (windowWidth - 2 * padding)) / 12
-      : windowWidth - 2 * padding;
-  $: numColumns = windowWidth > 900 ? 3 : windowWidth > 600 ? 2 : 1;
+  let numColumns;
+  $: switch (true) {
+    case windowWidth > 900:
+      numColumns = 3;
+      break;
+    case windowWidth <= 900 && windowWidth > 600:
+      numColumns = 2;
+      break;
+    default:
+      numColumns = 1;
+  }
   $: numRows = Math.ceil(years.length / numColumns);
-  $: itemWidth = svgWidth / numColumns;
-  $: itemHeight = itemWidth;
-  const verticalePadding = 40;
-  $: svgHeight = numRows * (itemHeight + verticalePadding);
+  $: smWidth = svgWidth / numColumns;
+  $: smHeight = smWidth + 40;
+  $: svgHeight = numRows * smHeight;
 
-  const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
-  const monthScale = scaleLinear()
-    .domain([0, months.length])
-    .range([0, 2 * Math.PI]);
+  // Extract the areas of the paintings and find the max area
+  paintings.forEach((painting) => {
+    if (painting.width_cm && painting.height_cm) {
+      painting["area_cm2"] = painting.width_cm * painting.height_cm;
+    }
+  });
+  const maxPaintingArea = max(paintings, (d) => d.area_cm2);
 
+  // Set the scale for the area of the paintings
+  const maxPaintingRadius = 10;
+  const paintingDefaultRadius = 3; // For the paintings whose dimensions are unknown
+  const paintingAreaScale = scaleLinear()
+    .domain([0, maxPaintingArea])
+    .range([0, Math.PI * Math.pow(maxPaintingRadius, 2)]);
+
+  // Reorganize the drawings on a yearly basis
   const yearlyDrawings = [];
   years.forEach((year) => {
     const relatedDrawings = { year: year, months: [] };
@@ -73,13 +74,12 @@
     yearlyDrawings.push(relatedDrawings);
   });
 
+  // Calculate the maximum number of drawings for a month
   const maxDrawings = max(yearlyDrawings, (d) =>
     max(d.months, (i) => i.drawings.length)
   );
 
-  const maxPaintingArea = max(paintings, (d) => d.width_cm * d.height_cm);
-
-  import Tooltip from "../UI/Tooltip.svelte";
+  let windowHeight;
   $: isTooltipVisible = false;
   $: tooltipMeta = {
     x: 0,
@@ -95,36 +95,46 @@
     height: 0,
   };
 
-  export let isPeriodSelected;
-  export let selectedPeriod;
+  // Add timeline information to the paintings
+  import timeline from "../data/timeline.json";
+  timeline.forEach((t) => {
+    t["startDate"] = new Date(t.start_year, t.start_month, 1);
+    t["endDate"] = new Date(t.end_year, t.end_month, 0);
+  });
+  paintings.forEach((p) => {
+    const date = new Date(p.year, p.monthIndex, 0);
+    timeline.forEach((t) => {
+      if (date >= t.startDate && date <= t.endDate) {
+        p["period"] = t.id;
+      }
+    });
+  });
 </script>
 
 <svelte:window bind:innerWidth={windowWidth} bind:innerHeight={windowHeight} />
 
 <div class="viz-container">
-  {#if svgWidth}
+  {#if svgWidth && svgHeight}
     <svg width={svgWidth} height={svgHeight}>
       {#each years as year, i}
         <g
-          transform="translate({(i % numColumns) * itemWidth}, {Math.floor(
-            i / numColumns
-          ) *
-            (itemHeight + verticalePadding)})"
+          transform="translate(
+            {(i % numColumns) * smWidth},
+            {Math.floor(i / numColumns) * smHeight})"
         >
-          <!-- <rect x="0" y="0" width={itemWidth} height={itemHeight} /> -->
+          <!-- <rect x={0} y={0} width={smWidth} height={smHeight} /> -->
           <GridItem
+            {smWidth}
+            {smHeight}
             {year}
-            {itemWidth}
-            {itemHeight}
-            {months}
-            {monthScale}
+            {paintingAreaScale}
+            {paintingDefaultRadius}
+            paintings={paintings.filter((painting) => painting.year === year)}
             {maxDrawings}
             drawings={yearlyDrawings.find((d) => d.year === year).months}
-            paintings={paintings.filter((p) => +p.year === year)}
-            {maxPaintingArea}
+            letters={letters.filter((letter) => letter.year === year)}
             bind:isTooltipVisible
             bind:tooltipMeta
-            bind:radialScale
             {isPeriodSelected}
             {selectedPeriod}
           />
@@ -133,6 +143,7 @@
     </svg>
   {/if}
   {#if isTooltipVisible}
+    <!-- USE SPREAD INSTEAD https://svelte.dev/tutorial/spread-props -->
     <Tooltip
       x={tooltipMeta.x}
       y={tooltipMeta.y}
@@ -153,9 +164,6 @@
 </div>
 
 <style>
-  .viz-container {
-    position: relative;
-  }
   /* svg {
     border: 1px solid magenta;
   } */

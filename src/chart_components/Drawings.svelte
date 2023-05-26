@@ -5,12 +5,12 @@
   export let drawings;
   export let monthScale;
   export let radialScale;
-  export let year;
   export let isPeriodSelected;
   export let selectedPeriod;
+  export let year;
 
   const lineGenerator = lineRadial()
-    .angle((d, i) => monthScale(i))
+    .angle((d) => monthScale(d.month))
     .radius((d) => radialScale(d.drawings.length))
     .curve(curveCatmullRomClosed);
 </script>

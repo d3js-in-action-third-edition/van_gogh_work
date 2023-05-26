@@ -1,16 +1,16 @@
 <script>
+  import { months } from "../utils/months";
   import { isMonthIncluded } from "../utils/helpers";
 
   export let letters;
   export let monthScale;
   export let radialScale;
-  export let months;
-  export let year;
   export let isPeriodSelected;
   export let selectedPeriod;
+  export let year;
 </script>
 
-{#each months as month, i}
+{#each months as month}
   <line
     class:lessen={isPeriodSelected &&
       !isMonthIncluded(
@@ -20,17 +20,11 @@
       )}
     x1={0}
     y1={0}
-    x2={radialScale(
-      letters.find((l) => l.year === year && l.month === month)
-        .number_of_letters
-    ) * Math.sin(monthScale(i))}
-    y2={-1 *
-      radialScale(
-        letters.find((l) => l.year === year && l.month === month)
-          .number_of_letters
-      ) *
-      Math.cos(monthScale(i))}
-    stroke-width={2.5}
+    x2={radialScale(letters.find((l) => l.month === month).number_of_letters) *
+      Math.sin(monthScale(month))}
+    y2={radialScale(letters.find((l) => l.month === month).number_of_letters) *
+      Math.cos(monthScale(month))}
+    stroke-width={2}
     stroke-linecap="round"
   />
 {/each}

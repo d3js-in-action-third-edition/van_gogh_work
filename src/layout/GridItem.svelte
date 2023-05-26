@@ -1,30 +1,32 @@
 <script>
-  import Drawings from "../chart_components/Drawings.svelte";
-  import Paintings from "../chart_components/Paintings.svelte";
-  import Letters from "../chart_components/Letters.svelte";
+  import { scalePoint, scaleLinear } from "d3-scale";
+  import { months } from "../utils/months";
   import { radiansToDegrees } from "../utils/helpers";
-  import { scaleLinear } from "d3-scale";
-  import letters from "../data/letters.json";
-  import { isYearIncluded } from "../utils/helpers";
-  import { isMonthIncluded } from "../utils/helpers";
+  import Paintings from "../chart_components/Paintings.svelte";
+  import Drawings from "../chart_components/Drawings.svelte";
+  import Letters from "../chart_components/Letters.svelte";
+  import { isMonthIncluded, isYearIncluded } from "../utils/helpers";
 
+  export let smWidth;
+  export let smHeight;
   export let year;
-  export let itemWidth;
-  export let itemHeight;
-  export let months;
-  export let monthScale;
-  export let drawings;
-  export let maxDrawings;
+  export let paintingAreaScale;
+  export let paintingDefaultRadius;
   export let paintings;
-  export let maxPaintingArea;
+  export let maxDrawings;
+  export let drawings;
+  export let letters;
   export let isTooltipVisible = false;
   export let tooltipMeta = {};
   export let isPeriodSelected;
   export let selectedPeriod;
-  export let radialScale;
 
-  const padding = 30;
-  $: radius = (itemWidth - 4 * padding) / 2;
+  const padding = 60;
+  $: radius = (smWidth - 2 * padding) / 2;
+
+  const monthScale = scalePoint()
+    .domain(months)
+    .range([0, 2 * Math.PI - (2 * Math.PI) / 12]);
 
   $: radialScale = scaleLinear()
     .domain([0, maxDrawings])
@@ -39,8 +41,8 @@
   };
 </script>
 
-<g transform="translate({itemWidth / 2}, 0)">
-  <g transform="translate(0, {2 * padding + radius})">
+<g transform="translate({smWidth / 2}, 0)">
+  <g transform="translate(0, {padding + radius})">
     <circle
       cx="0"
       cy="0"
@@ -49,9 +51,8 @@
       on:mouseenter={() => handleMouseEnter()}
       on:mouseleave={() => handleMouseLeave()}
     />
-    {#each months as month, i}
+    {#each months as month}
       <line
-        class="line-{month}-{i}"
         class:lessen={isPeriodSelected &&
           !isMonthIncluded(
             selectedPeriod,
@@ -60,9 +61,8 @@
           )}
         x1="0"
         y1="0"
-        x2={radius * Math.sin(monthScale(i))}
-        y2={-1 * radius * Math.cos(monthScale(i))}
-        stroke-opacity={0.2}
+        x2={radius * Math.sin(monthScale(month))}
+        y2={-1 * radius * Math.cos(monthScale(month))}
         stroke-linecap="round"
       />
       <text
@@ -73,24 +73,27 @@
             months.findIndex((m) => m === month),
             year
           )}
-        transform="translate({(radius + 30) * Math.sin(monthScale(i))}, {-1 *
+        transform="translate({(radius + 30) *
+          Math.sin(monthScale(month))}, {-1 *
           (radius + 30) *
-          Math.cos(monthScale(i))}) rotate({monthScale(i) <= Math.PI / 2 ||
-        monthScale(i) >= (3 * Math.PI) / 2
-          ? radiansToDegrees(monthScale(i))
-          : radiansToDegrees(monthScale(i - 6))})"
+          Math.cos(monthScale(month))}) 
+          rotate({monthScale(month) <= Math.PI / 2 ||
+        monthScale(month) >= (3 * Math.PI) / 2
+          ? radiansToDegrees(monthScale(month))
+          : radiansToDegrees(monthScale(month)) - 180})"
         text-anchor="middle"
         dominant-baseline="middle">{month.slice(0, 3)}</text
       >
       <text
         class="work-tooltip"
         class:visible={isWorkTooltipVisible}
-        transform="translate({(radius + 48) * Math.sin(monthScale(i))}, {-1 *
+        transform="translate({(radius + 48) *
+          Math.sin(monthScale(month))}, {-1 *
           (radius + 48) *
-          Math.cos(monthScale(i))}) rotate({monthScale(i) <= Math.PI / 2 ||
-        monthScale(i) >= (3 * Math.PI) / 2
-          ? radiansToDegrees(monthScale(i))
-          : radiansToDegrees(monthScale(i - 6))})"
+          Math.cos(monthScale(month))}) rotate({monthScale(month) <=
+          Math.PI / 2 || monthScale(month) >= (3 * Math.PI) / 2
+          ? radiansToDegrees(monthScale(month))
+          : radiansToDegrees(monthScale(month)) - 180})"
         text-anchor="middle"
         dominant-baseline="middle"
       >
@@ -99,48 +102,51 @@
         {letters.find((l) => l.month === month && l.year === year)
           .number_of_letters}l
       </text>
-      <Paintings
-        {paintings}
-        {monthScale}
-        {radius}
-        {maxPaintingArea}
-        {itemWidth}
-        bind:isTooltipVisible
-        bind:tooltipMeta
-        {isPeriodSelected}
-        {selectedPeriod}
-      />
     {/each}
+    <Paintings
+      {paintingAreaScale}
+      {paintingDefaultRadius}
+      {paintings}
+      {monthScale}
+      {radius}
+      bind:isTooltipVisible
+      bind:tooltipMeta
+      {isPeriodSelected}
+      {selectedPeriod}
+    />
     <Drawings
       {drawings}
       {monthScale}
       {radialScale}
-      {year}
       {isPeriodSelected}
       {selectedPeriod}
+      {year}
     />
     <Letters
       {letters}
       {monthScale}
       {radialScale}
-      {months}
-      {year}
       {isPeriodSelected}
       {selectedPeriod}
+      {year}
     />
   </g>
   <text
-    class="year-label"
-    y={itemHeight + 10}
-    text-anchor="middle"
     class:lessen={isPeriodSelected && !isYearIncluded(selectedPeriod, year)}
-    >{year}</text
+    x={0}
+    y={smHeight - 5}
+    text-anchor="middle">{year}</text
   >
 </g>
 
 <style lang="scss">
+  // circle {
+  //   fill: none;
+  //   stroke: $text;
+  // }
   line {
     stroke: $text;
+    stroke-opacity: 0.2;
     &.lessen {
       opacity: 0;
     }
@@ -155,11 +161,6 @@
     &.visible {
       opacity: 1;
     }
-  }
-  line,
-  .month-label,
-  .year-label {
-    transition: opacity 100ms ease;
   }
   text {
     pointer-events: none;

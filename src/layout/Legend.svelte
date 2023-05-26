@@ -48,7 +48,7 @@
           </li>
           <li>
             <span class="border print" />
-            <span class="label">Print</span>
+            <span class="label">Lithograph and Etchings</span>
           </li>
         </ul>
       </div>

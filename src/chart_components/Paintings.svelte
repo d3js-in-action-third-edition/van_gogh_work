@@ -1,22 +1,17 @@
 <script>
   import { forceSimulation, forceX, forceY, forceCollide } from "d3-force";
-  import { scaleRadial, scaleOrdinal } from "d3-scale";
+  import { scaleOrdinal } from "d3-scale";
   import { subjects } from "../utils/subjects";
 
+  export let paintingAreaScale;
+  export let paintingDefaultRadius;
   export let paintings;
   export let monthScale;
   export let radius;
-  export let maxPaintingArea;
-  export let itemWidth;
   export let isTooltipVisible = false;
   export let tooltipMeta = {};
   export let isPeriodSelected;
   export let selectedPeriod;
-
-  const circleRadiusScale = scaleRadial()
-    .domain([0, Math.sqrt(maxPaintingArea)])
-    .range([0, 8]);
-  const defaultRadius = 3;
 
   let simulation = forceSimulation(paintings);
   let nodes = [];
@@ -29,31 +24,27 @@
       .force(
         "x",
         forceX((d) =>
-          d.monthIndex === null
-            ? Math.random() * itemWidth - itemWidth / 2
-            : radius * Math.sin(monthScale(d.monthIndex))
+          d.month !== "" ? radius * Math.sin(monthScale(d.month)) : 0
         ).strength(0.5)
       )
       .force(
         "y",
         forceY((d) =>
-          d.monthIndex === null
-            ? radius + 70
-            : -1 * radius * Math.cos(monthScale(d.monthIndex))
+          d.month !== "" ? -1 * radius * Math.cos(monthScale(d.month)) : 0
         ).strength(0.5)
       )
       .force(
         "collide",
         forceCollide()
           .radius((d) =>
-            d.width_cm === null
-              ? defaultRadius + 1
-              : circleRadiusScale(Math.sqrt(d.width_cm * d.height_cm)) + 1
+            d.width_cm === null && d.height_cm === null
+              ? paintingDefaultRadius + 1
+              : Math.sqrt(paintingAreaScale(d.area_cm2) / Math.PI) + 1
           )
           .strength(1)
       )
       .alpha(0.5)
-      .alphaDecay(0.5);
+      .alphaDecay(0.1);
   }
 
   const colorScale = scaleOrdinal()
@@ -66,7 +57,7 @@
       x: e.offsetX,
       y: e.offsetY,
       screenY: e.clientY,
-      url: node.image,
+      url: node.imageLink,
       title: node.title,
       createdIn: node.created_in,
       date: node.month !== "" ? `${node.month} ${node.year}` : node.year,
@@ -89,10 +80,10 @@
     class:lessen={isPeriodSelected && node.period !== selectedPeriod}
     cx={node.x}
     cy={node.y}
-    r={node.width_cm === null
-      ? defaultRadius
-      : circleRadiusScale(Math.sqrt(node.width_cm * node.height_cm))}
-    fill={node.subject !== "" ? colorScale(node.subject) : "white"}
+    r={node.area_cm2
+      ? Math.sqrt(paintingAreaScale(node.area_cm2) / Math.PI)
+      : paintingDefaultRadius}
+    fill={colorScale(node.subject)}
     on:mouseover={(e) => handleMouseEnter(e, node)}
     on:focus={(e) => handleMouseEnter(e, node)}
     on:mouseleave={() => handleMouseLeave()}
